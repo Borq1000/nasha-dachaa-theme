@@ -1,0 +1,375 @@
+@media (min-width: 1025px) and (max-width: 2280px) {
+  
+  .ul-single-beton{
+    column-count: 2;
+    height: 260px !important;
+    padding:0;
+    margin:0;
+    border-bottom: 2px dotted #8D0E0A;
+}
+  
+}
+
+
+@media only screen and (max-width :715px) {
+    
+      .mobile-br {
+        display: block;
+    }
+    
+    
+    #top-area-home{
+        display: none;
+    }
+    
+    #top-how-block{
+        display: none;
+    }
+    
+    
+    
+    .fieldset-zaezd-razmeri{
+        height: 550px;
+    }
+    
+    .shirina-zaezd-col{
+        
+        border-bottom: 2px solid #ddd;
+        margin-bottom: 30px;
+    }
+    
+    #home-pg-top-form{
+        display: none;
+    }
+    
+    .header-contact-info-wraper{
+        float: left;
+    }
+    
+    #breadcrumbs-one{
+     
+    }
+    
+    .meta-block-outer{
+        max-width: 80%;
+    }
+    
+    .ser-cont-title{
+        font-size: 22px;
+        margin-left: 15px;
+    }
+    
+    
+    .aditional-item{
+        margin:10px 15px 20px 15px;
+    }
+    
+    
+    .ul-single-beton > li{
+    margin:none !important;
+    
+}
+
+
+#ul-betonnya-pl{
+    height: auto !important;
+}
+
+#ul-ploshchadka-dpl{
+    height: auto !important;
+}
+
+#ul-sadivie-dr{
+    height: auto !important;
+}
+    
+}
+
+@media only screen and (max-width :768px) {
+    
+    .br-mobile {
+        display: inline-block;
+    }
+    
+    .bt-defic-mobile {
+        display: inline-block;
+        margin-left: 2px;
+    }
+    
+    .main-service-page-list-pair .name {
+    width: 100%;
+    font-weight: bold;
+}
+
+.main-service-page-list-pair .name::before {
+    content: "";
+    margin-left: 0px;
+    display: none;
+}
+
+.main-service-page-list-pair .value {
+    width: 100%;
+   
+}
+
+.main-service-page-list-pair {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 10px;
+}
+    
+    .table-responsive-mobile-cor {width: 100%;}
+    
+    .table-responsive-mobile-cor th, .table-responsive-mobile-cor td {
+        padding: 6px 3px; /* Уменьшаем отступы в ячейках */
+        font-size: 14px; /* Меньший размер шрифта для улучшения читаемости */
+    }
+    
+    .table-responsive-mobile-cor th {
+        font-size: 13px;
+    }
+    
+ 
+
+.table-responsive-mobile-cor .th-wider, .table-responsive-mobile-cor .td-wider {
+    min-width: 120px !important; /* Минимальная ширина каждой ячейки */
+    width: 120px !important;
+}
+    
+    .table-responsive-mobile-cor td ul {
+        padding-left: 2px;
+        list-style-type: none;
+        
+    }
+    
+    .table-responsive-mobile-cor td ul li {
+        font-size: 14px !important;
+        margin-bottom: 6px;
+    }
+    
+    .table-responsive-mobile-cor td ul li::before {
+        content: "•";
+        margin-left: 3px;
+    }
+    
+    
+    
+      /*---------стили для корректного отображения содержимого таблиц на мобильных устройствах ---------------------*/
+    
+    .table-responsive-lim {}
+    
+    .table-responsive .dop-pay-txt {
+    word-wrap: break-word !important;   /* Позволяет тексту переноситься на новую строку */
+    white-space: normal;     /* Отменяет принудительное нахождение текста в одной строке */
+}
+
+.table-responsive-lim .td-tzeni-dop {
+    width: 25%;  /* или другой процент, который лучше подходит под ваш дизайн */
+    font-size: 13px;
+}
+
+.table-responsive-lim .dop-pay-txt {
+        font-size: 14px; /* или меньше, в зависимости от ваших нужд */
+    }
+    
+    .table-responsive-lim td {
+    padding: 8px;  /* Добавляет пространство внутри ячеек */
+}
+
+.table-responsive-lim .dop-pay-txt {
+    overflow: hidden;  /* Скрывает текст, выходящий за пределы элемента */
+    text-overflow: ellipsis;  /* Добавляет многоточие в конце обрезанного текста */
+}
+  
+.table-responsive-lim td {
+    word-wrap: break-word !important;
+    white-space: normal !important;
+}
+
+ 
+
+/*---------стили для корректного отображения содержимого таблиц на мобильных устройствах end---------------------*/
+    
+    #mega-menu-item-2803 {
+        margin-top: 30px !important;
+    }
+    
+    #mega-menu-item-3338 {
+        margin-top: 10px !important;
+    }
+    
+    .mega-sub-menu li a {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width :415px) {
+  
+	
+	.top-single-info .button-71 {
+		margin-left:50px;
+	}
+	
+	.top-single-info .pull-right {
+		float: none !important;
+	}
+	
+	.price-col-wrapper {
+    float: none !important;
+    
+}
+	
+	.price-col-wrapper .price-span {
+	position: relative;
+    top: 10px;		
+	
+}
+	
+	.img-measuring-wraper {
+		display: none;
+	}
+	
+	.measuring-text {
+		height: auto;
+		
+	}
+	
+	.measuring-title {
+		color: #F4B226;
+	}
+	
+	.measuring-below-text {
+		color: #333;
+	}
+    
+     .mega-sub-menu li a {
+        font-size: 18px;
+    }
+    
+    .js-ag-accordeon_title::before {
+        right: 1px;
+    }
+    
+    .js-ag-accordeon_title::after {
+        right: 1px;
+    }
+    
+    .js-ag-accordeon_title {
+        font-size: 17px;
+    }
+    
+    .messendger-btn-wraper{
+    display: flex;
+    justify-content: start;
+    margin-top: 20px;
+}
+    
+    #centered-on-mobile{
+        margin: 0 auto;
+    }
+    
+    .car-gabariti {
+    width: 100%;
+}
+    
+    .logo-img{
+        width: 100% !important;
+    }
+    
+    .header-info__text {
+  
+  margin: 0 auto;
+}
+
+.header-info__logo-title{
+    text-align: center;
+    margin-top:15px;
+}
+
+.top-nav{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.top-nav li {
+    margin-bottom: 10px;
+}
+
+h1{
+    text-align: left;
+    font-size: 27px;
+}
+
+.top-how-block{
+    display: none;
+}
+
+.header-contact-info-wraper {
+    float: none;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 2em;
+}
+
+.header-info__phone {
+    display: inline;
+}
+    
+    .cities-ul-wraper li{
+        font-size: 14px;
+    }
+    
+    .text-scroll-right{
+    display: inline-block;
+    text-align: left !important;
+    font-style: italic;
+    line-height: 1em !important;
+    color:#7FC321;
+    font-size: 16px !important;
+}
+
+    
+    .footer-cities-area {
+  background: url(/wp-content/uploads/2021/10/mapmsko2-op.png) center;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.ul-single-beton > li{
+    margin:none !important;
+    
+}
+
+
+#ul-betonnya-pl{
+    height: auto !important;
+}
+
+#ul-ploshchadka-dpl{
+    height: auto !important;
+}
+
+#ul-sadivie-dr{
+    height: auto !important;
+}
+
+
+}
+
+@media only screen and (max-width :359px) {
+	.price-col-wrapper span {
+		font-size: 17px !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+

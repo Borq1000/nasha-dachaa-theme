@@ -1,0 +1,62 @@
+/* Кнопка "Начать разговор" */
+#start-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 99;
+    display: none;
+}
+
+/* Блок чата */
+#chatbox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    height: 400px;
+    display: none;
+    z-index: 99;
+    display: none;
+}
+
+/* Кнопка закрытия чата */
+#close-chat {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Блок сообщений */
+#messages {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+/* Поле ввода */
+#user-input {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    outline: none;
+}
+
+/* Кнопка отправки сообщения (скрыта) */
+#send-btn {
+    display: none;
+}
