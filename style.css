@@ -3406,7 +3406,7 @@ a.mega-menu-link {
   color: #fff;
 }
 
-/*----------СТИЛИ КАЛЬКУЛЯТОРОВ ЗАКАНЧИВЫЮТСЯ ЗДЕСЬ-------------------*/
+/*----------СТИЛИ ��АЛЬКУЛЯТОРОВ ЗАКАНЧИВЫЮТСЯ ЗДЕСЬ-------------------*/
 
 .ag-accordeon_info {
   display: none;
@@ -3863,5 +3863,283 @@ a.mega-menu-link {
   .detailed-service-item-wraper {
     padding: 20px;
     margin-bottom: 20px;
+  }
+}
+
+/* Секция статистики */
+.showing {
+  padding: 50px 0; /* Уменьшаем с 80px до 50px */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/wp-content/uploads/2024/01/statistics-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .showing {
+    padding: 30px 0; /* Уменьшаем с 50px до 30px для мобильных */
+  }
+}
+
+.showing__item {
+  text-align: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.showing__item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.showing__top {
+  margin-bottom: 15px;
+}
+
+.showing__number {
+  font-size: 48px;
+  font-weight: 700;
+  color: #7fc321;
+  display: block;
+  margin-bottom: 5px;
+  font-family: "Playfair Display", serif;
+}
+
+.showing__bottom {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* Иконки для каждого блока */
+.showing__item i {
+  font-size: 32px;
+  color: #7fc321;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .showing {
+    padding: 50px 0;
+  }
+
+  .showing__item {
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .showing__number {
+    font-size: 36px;
+  }
+
+  .showing__bottom {
+    font-size: 14px;
+  }
+}
+
+/* Стили для FAQ секции */
+.qa-group {
+  padding: 50px 0;
+  background: #ffffff;
+}
+
+.qa-group .h3 {
+  font-size: 36px; /* Увеличен с 32px */
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #222222;
+}
+
+.qa-group .h3:after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #7fc321;
+}
+
+.ag-accordeon_box {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.js-ag-accordeon_item {
+  background: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.js-ag-accordeon_item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.js-ag-accordeon_title {
+  padding: 20px 25px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #222222;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.js-ag-accordeon_title:before {
+  content: "\f107";
+  font-family: "FontAwesome";
+  position: absolute;
+  right: 25px;
+  color: #7fc321;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.js-ag-accordeon_title.js-ag-show {
+  color: #7fc321;
+}
+
+.js-ag-accordeon_title.js-ag-show:before {
+  transform: rotate(180deg);
+}
+
+.js-ag-accordeon_info {
+  display: none;
+  padding: 0 25px 20px;
+}
+
+.ag-accordeon_content {
+  color: #555555;
+  font-size: 15px;
+  line-height: 1.6;
+  padding-top: 5px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .qa-group {
+    padding: 40px 20px;
+  }
+
+  .qa-group .h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .js-ag-accordeon_title {
+    padding: 16px 20px;
+    font-size: 15px;
+    padding-right: 40px;
+  }
+
+  .js-ag-accordeon_title:before {
+    right: 20px;
+    font-size: 18px;
+  }
+
+  .js-ag-accordeon_info {
+    padding: 0 20px 16px;
+  }
+
+  .ag-accordeon_content {
+    font-size: 14px;
+  }
+}
+
+/* Стили для FAQ секции */
+.faq-section {
+  padding: 60px 0;
+  background: #ffffff;
+}
+
+.faq-section .h3 {
+  font-size: 36px; /* Увеличен с 32px */
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #222222;
+}
+
+.faq-container {
+  max-width: 1000px; /* Увеличен с 900px для лучшей читаемости */
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  margin-bottom: 20px; /* Увеличен отступ между вопросами */
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  padding: 16px 20px; /* Уменьшены отступы с 25px 30px */
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #222222;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-question:after {
+  content: "\f107";
+  font-family: "FontAwesome";
+  color: #7fc321;
+  font-size: 24px; /* Увеличен размер иконки */
+  transition: all 0.3s ease;
+  margin-left: 20px;
+  min-width: 24px;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 20px 16px; /* Уменьшены отступы с 0 30px 25px */
+}
+
+.faq-answer p {
+  color: #444444; /* Сделан темнее для лучшего контраста */
+  font-size: 17px; /* Увеличен с 15px */
+  line-height: 1.7; /* Увеличен межстрочный интервал */
+  margin: 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .faq-section .h3 {
+    font-size: 30px;
+  }
+
+  .faq-question {
+    padding: 14px 18px; /* Уменьшены отступы с 20px 25px */
+    font-size: 17px; /* Увеличен для мобильных */
+  }
+
+  .faq-answer {
+    padding: 0 18px 14px; /* Уменьшены отступы с 0 25px 20px */
+  }
+
+  .faq-answer p {
+    font-size: 16px; /* Увеличен для мобильных */
   }
 }

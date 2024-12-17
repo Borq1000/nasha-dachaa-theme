@@ -42,30 +42,47 @@
 
 
 
-    <section class="showing showing--mainpage lazy-img" data-src="<?php bloginfo('template_url') ?>/img/bg/grass__bg.jpg">
+    <section class="showing">
         <div class="container">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-                <div class="showing__item">
-                    <div class="showing__top"><span class="showing__number js-number-counter" data-start="0">3</span></div>
-                    <div class="showing__bottom">Гарантия на услуги 3 года</div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div class="showing__item">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="showing__top">
+                            <span class="showing__number js-number-counter" data-start="0">3</span>
+                        </div>
+                        <div class="showing__bottom">Гарантия на услуги 3 года</div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-                <div class="showing__item">
-                    <div class="showing__top"><span class="showing__number js-number-counter" data-start="0">140</span></div>
-                    <div class="showing__bottom">140 построенных объектов</div>
+                
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div class="showing__item">
+                        <i class="fas fa-home"></i>
+                        <div class="showing__top">
+                            <span class="showing__number js-number-counter" data-start="0">140</span>
+                        </div>
+                        <div class="showing__bottom">Построенных объектов</div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-                <div class="showing__item">
-                    <div class="showing__top"><span class="showing__number js-number-counter" data-start="0">10</span></div>
-                    <div class="showing__bottom">10 лет в строительной сфере</div>
+                
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div class="showing__item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div class="showing__top">
+                            <span class="showing__number js-number-counter" data-start="0">10</span>
+                        </div>
+                        <div class="showing__bottom">Лет в строительной сфере</div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-                <div class="showing__item">
-                    <div class="showing__top"><span class="showing__number js-number-counter" data-start="0">3700</span></div>
-                    <div class="showing__bottom">3700 м2 благоустроенных участков</div>
+                
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div class="showing__item">
+                        <i class="fas fa-chart-area"></i>
+                        <div class="showing__top">
+                            <span class="showing__number js-number-counter" data-start="0">3700</span>
+                        </div>
+                        <div class="showing__bottom">м² благоустроенных участков</div>
+                    </div>
                 </div>
             </div>
         </div>

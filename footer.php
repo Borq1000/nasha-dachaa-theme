@@ -97,6 +97,27 @@
 <script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/custom.js"></script>
 
 <script>
+jQuery(document).ready(function($) {
+    $('.faq-question').on('click', function() {
+        var $item = $(this).closest('.faq-item');
+        var $answer = $(this).next('.faq-answer');
+        
+        if ($item.hasClass('active')) {
+            $item.removeClass('active');
+            $answer.slideUp(200);
+        } else {
+            $('.faq-item').removeClass('active');
+            $('.faq-answer').slideUp(200);
+            
+            $item.addClass('active');
+            $answer.slideDown(200);
+        }
+    });
+});
+</script>
+
+<script>
+
 //Этот код устанавливает значение скрытого поля "page-title" равным названию
 //текущей страницы, когда страница загружается.    
 document.addEventListener('DOMContentLoaded', function() {
