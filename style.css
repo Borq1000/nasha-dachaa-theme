@@ -4059,7 +4059,7 @@ a.mega-menu-link {
     color: #7fc321 !important;
 }
 
-/* Принудительно меняем цвет текста п��нктов меню */
+/* Принудительно меняем цвет текста ����нктов меню */
 #mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2801 > a.mega-menu-link,
 #mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2803 > a.mega-menu-link {
     color: #222 !important;
@@ -4190,4 +4190,128 @@ a.mega-menu-link {
     color: #444;
     font-weight: 500;
     margin: 0;
+}
+
+/* Стили для секции достижений */
+.achievements-section {
+    padding: 80px 0;
+    position: relative;
+    background: url('https://nasha-dachaa.ru/wp-content/uploads/2024/12/banner3.jpg') center/cover no-repeat fixed;
+}
+
+.achievements-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.58));
+    z-index: 1;
+}
+
+.achievements-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.achievement-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.achievement-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.achievement-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(127, 195, 33, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+}
+
+.achievement-item:hover .achievement-icon {
+    background: #7fc321;
+}
+
+.achievement-icon i {
+    font-size: 28px;
+    color: #7fc321;
+    transition: all 0.3s ease;
+}
+
+.achievement-item:hover .achievement-icon i {
+    color: #ffffff;
+}
+
+.achievement-number {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+}
+
+.achievement-text {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.4;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 991px) {
+    .achievements-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .achievements-section {
+        padding: 60px 0;
+    }
+
+    .achievements-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .achievement-item {
+        padding: 25px 15px;
+    }
+    
+    .achievement-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .achievement-icon i {
+        font-size: 24px;
+    }
+    
+    .achievement-number {
+        font-size: 36px;
+    }
+    
+    .achievement-text {
+        font-size: 15px;
+    }
 }

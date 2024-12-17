@@ -42,51 +42,7 @@
 
 
 
-    <section class="showing">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-                    <div class="showing__item">
-                        <i class="fas fa-shield-alt"></i>
-                        <div class="showing__top">
-                            <span class="showing__number js-number-counter" data-start="0">3</span>
-                        </div>
-                        <div class="showing__bottom">Гарантия на услуги 3 года</div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-                    <div class="showing__item">
-                        <i class="fas fa-home"></i>
-                        <div class="showing__top">
-                            <span class="showing__number js-number-counter" data-start="0">140</span>
-                        </div>
-                        <div class="showing__bottom">Построенных объектов</div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-                    <div class="showing__item">
-                        <i class="fas fa-calendar-alt"></i>
-                        <div class="showing__top">
-                            <span class="showing__number js-number-counter" data-start="0">10</span>
-                        </div>
-                        <div class="showing__bottom">Лет в строительной сфере</div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-                    <div class="showing__item">
-                        <i class="fas fa-chart-area"></i>
-                        <div class="showing__top">
-                            <span class="showing__number js-number-counter" data-start="0">3700</span>
-                        </div>
-                        <div class="showing__bottom">м² благоустроенных участков</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php require_once 'includes/our-achievements.php'; ?>
 
     <section class="main-text-home">
         <div class="container">
