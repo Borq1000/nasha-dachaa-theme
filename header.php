@@ -68,32 +68,25 @@
     <body <?php body_class(); ?>>
         <div class="main" id="main">
             <section class="promotion">
-                <div class="row">
-                    <div class="col-md-6" style="padding: 0px;margin:0px;">
-                        <p class="promotion-text-top-left">
-                            <i class="far fa-clock" style="color: #7fc321; margin-right: 5px;"></i>
-                            Регион: Московская область
-                        </p>
-                    </div>
-                    <div class="col-md-6" style="padding: 0px;margin:0px;">
-                        <ul class="nav justify-content-end top-nav pull-right" style="padding: 0px;margin:0px;">
+                <div class="container">
+                    <div class="promotion-content">
+                        <div class="promotion-region">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Регион:</span>
+                            <strong>Московская область</strong>
+                        </div>
+                        <ul class="nav justify-content-end top-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="/o-nas/"> О нас</a>
+                                <a class="nav-link" href="/o-nas/">О нас</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/projects/" title="Наши работы"> Примеры работ</a>
+                                <a class="nav-link" href="/projects/" title="Наши работы">Примеры работ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/articles/"> Полезные статьи</a>
+                                <a class="nav-link" href="/articles/">Полезные статьи</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/kontakty/"> Контакты</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://wa.me/79778075987" class="whatsapp-link top-nav-whatsapp">
-                                    <span class="whatsapp-text">WhatsApp</span>
-                                    <i class="whatsapp-icon"></i>
-                                </a>
+                                <a class="nav-link" href="/kontakty/">Контакты</a>
                             </li>
                         </ul>
                     </div>
