@@ -37,7 +37,7 @@
 
         
 
-        <script src="https://kit.fontawesome.com/33e8d5cd12.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/515fbe8325.js" crossorigin="anonymous"></script>
 
         <meta name="google-site-verification" content="FZftcSz8HJfwuJ5m9pPc56CEKLHA9USPKhbrVdxUWNI" />
         <meta name="yandex-verification" content="7e7d6e012fab8126" />

@@ -2,10 +2,12 @@
     <div class="container">
         <div class="h3">Другие услуги по благоустройству территории</div>
         <div class="row detailed-services-wraper">
-
-            <!----------------item---------------->
+            
             <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="detailed-service-item-wraper">
+                    <div class="detailed-service-category-title">
+                        Расчистка и подготовка
+                    </div>
                     <ul class="detailed-service-ul">
                         <li><a href="https://nasha-dachaa.ru/raschistka-uchastka-detail/" title="Расчистка участка">Расчистка участка</a></li>
                         <li><a href="https://nasha-dachaa.ru/raskorchevka-uchastka/" title="Раскорчевка участка">Раскорчевка участка</a></li>
@@ -21,12 +23,12 @@
                     </ul>
                 </div>
             </div>
-            <!-------------item end---------------->
 
-
-            <!----------------item---------------->
             <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="detailed-service-item-wraper">
+                    <div class="detailed-service-category-title">
+                        Ландшафтные работы
+                    </div>
                     <ul class="detailed-service-ul">
                         <li><a href="https://nasha-dachaa.ru/rulonnyj-gazon/" title="Укладка рулонного газона">Укладка рулонного газона</a></li>
                         <li><a href="https://nasha-dachaa.ru/ustrojstvo-posevnogo-gazona/" title="Устройство посевного газона">Устройство посевного газона</a></li>
@@ -39,12 +41,12 @@
                     </ul>
                 </div>
             </div>
-            <!-------------item end---------------->
 
-
-            <!----------------item---------------->
             <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="detailed-service-item-wraper">
+                    <div class="detailed-service-category-title">
+                        Строительство площадок
+                    </div>
                     <ul class="detailed-service-ul">
                         <li><a href="https://nasha-dachaa.ru/betonnaya-ploshhadka/" title="Бетонная площадка под автомобиль">Бетонная площадка под автомобиль</a></li>
                         <li><a href="https://nasha-dachaa.ru/ploshhadki-iz-shhebnya/" title="Площадки из щебня">Площадки из щебня</a></li>
@@ -55,10 +57,6 @@
                     </ul>
                 </div>
             </div>
-            <!-------------item end---------------->
-
-
-
 
         </div>
     </div>

@@ -2729,20 +2729,80 @@ figcaption {
 
 .detailed-service-ul li {
   margin-bottom: 10px;
-  border: 1px solid #abb8c3;
-
+  border: 1px solid #7fc321;
+  border-radius: 8px;
   padding: 5px 5px 5px 10px;
 }
 
-.detailed-service-ul li:before {
-  content: "»";
-  margin-right: 5px;
-  font-size: 18px;
-  color: #abb8c3;
+.detailed-service-ul li a {
+  color: #222222;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  background: #f8f9fa;
 }
 
-.detailed-service-ul li a {
-  color: #50c400;
+.detailed-service-ul li a:before {
+  content: "\f178"; /* FontAwesome long-arrow-right */
+  font-family: "FontAwesome";
+  margin-right: 12px;
+  color: #7fc321;
+  font-size: 16px;
+  opacity: 1;
+  transition: all 0.3s ease;
+  width: 24px;
+  height: 24px;
+  background: #f0f7eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailed-service-ul li:hover a {
+  color: #7fc321;
+  background: #f0f7eb;
+}
+
+.detailed-service-ul li:hover a:before {
+  background: #7fc321;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* Убираем разные иконки для разных категорий */
+.detailed-service-item-wraper:nth-child(1) .detailed-service-ul li a:before,
+.detailed-service-item-wraper:nth-child(2) .detailed-service-ul li a:before,
+.detailed-service-item-wraper:nth-child(3) .detailed-service-ul li a:before {
+  content: "\f178"; /* Используем одинаковую горизонтальную стрелку везде */
+}
+
+/* Стили для заголовков категорий */
+.detailed-service-category-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.detailed-service-category-title i {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #7fc321;
+  width: 36px;
+  height: 36px;
+  background: #f0f7eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service-div-h3 {
@@ -3420,7 +3480,7 @@ a.mega-menu-link {
   }
 }
 
-/* Стили для WhatsApp в верхнем меню */
+/* Стии для WhatsApp в верхнем меню */
 .top-nav-whatsapp {
   margin: 0 !important;
   padding: 4px 16px !important;
@@ -3703,5 +3763,105 @@ a.mega-menu-link {
   .button-services-main {
     padding: 12px 20px;
     font-size: 15px;
+  }
+}
+
+/* Стили для секции детальных услуг */
+.detailed-services-wraper {
+  padding: 60px 0;
+  background: #ffffff;
+}
+
+.detailed-services-wraper .h3 {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #222222;
+}
+
+.detailed-service-item-wraper {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.detailed-service-category-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f7eb;
+  text-align: center;
+}
+
+.detailed-service-ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.detailed-service-ul li {
+  margin-bottom: 12px;
+}
+
+.detailed-service-ul li a {
+  color: #222222;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  background: #f8f9fa;
+}
+
+.detailed-service-ul li a:before {
+  content: "\f061"; /* FontAwesome arrow-right */
+  font-family: "FontAwesome";
+  margin-right: 15px;
+  color: #7fc321;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.detailed-service-ul li:hover a {
+  color: #7fc321;
+  background: #f0f7eb;
+  transform: translateX(5px);
+}
+
+.detailed-service-ul li:hover a:before {
+  transform: translateX(3px);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .detailed-services-wraper {
+    padding: 40px 20px;
+  }
+
+  .detailed-services-wraper .h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .detailed-service-category-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .detailed-service-ul li a {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+
+  .detailed-service-item-wraper {
+    padding: 20px;
+    margin-bottom: 20px;
   }
 }
