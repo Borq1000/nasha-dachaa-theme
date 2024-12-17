@@ -97,7 +97,7 @@ h3 {
 .header .callback-btn {
   display: inline-flex;
   align-items: center;
-  padding: 6px 16px; /* Уменьшаем вертикальные отступы */
+  padding: 6px 16px !important; /* Уменьшаем вертикальные отступы */
   background: #7fc321;
   color: #fff;
   border: none;

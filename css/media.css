@@ -1,375 +1,607 @@
 @media (min-width: 1025px) and (max-width: 2280px) {
-  
-  .ul-single-beton{
+  .ul-single-beton {
     column-count: 2;
     height: 260px !important;
-    padding:0;
-    margin:0;
-    border-bottom: 2px dotted #8D0E0A;
-}
-  
-}
-
-
-@media only screen and (max-width :715px) {
-    
-      .mobile-br {
-        display: block;
-    }
-    
-    
-    #top-area-home{
-        display: none;
-    }
-    
-    #top-how-block{
-        display: none;
-    }
-    
-    
-    
-    .fieldset-zaezd-razmeri{
-        height: 550px;
-    }
-    
-    .shirina-zaezd-col{
-        
-        border-bottom: 2px solid #ddd;
-        margin-bottom: 30px;
-    }
-    
-    #home-pg-top-form{
-        display: none;
-    }
-    
-    .header-contact-info-wraper{
-        float: left;
-    }
-    
-    #breadcrumbs-one{
-     
-    }
-    
-    .meta-block-outer{
-        max-width: 80%;
-    }
-    
-    .ser-cont-title{
-        font-size: 22px;
-        margin-left: 15px;
-    }
-    
-    
-    .aditional-item{
-        margin:10px 15px 20px 15px;
-    }
-    
-    
-    .ul-single-beton > li{
-    margin:none !important;
-    
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px dotted #8d0e0a;
+  }
 }
 
+@media only screen and (max-width: 715px) {
+  .mobile-br {
+    display: block;
+  }
 
-#ul-betonnya-pl{
+  #top-area-home {
+    display: none;
+  }
+
+  #top-how-block {
+    display: none;
+  }
+
+  .fieldset-zaezd-razmeri {
+    height: 550px;
+  }
+
+  .shirina-zaezd-col {
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 30px;
+  }
+
+  #home-pg-top-form {
+    display: none;
+  }
+
+  .header-contact-info-wraper {
+    float: left;
+  }
+
+  #breadcrumbs-one {
+  }
+
+  .meta-block-outer {
+    max-width: 80%;
+  }
+
+  .ser-cont-title {
+    font-size: 22px;
+    margin-left: 15px;
+  }
+
+  .aditional-item {
+    margin: 10px 15px 20px 15px;
+  }
+
+  .ul-single-beton > li {
+    margin: none !important;
+  }
+
+  #ul-betonnya-pl {
     height: auto !important;
-}
+  }
 
-#ul-ploshchadka-dpl{
+  #ul-ploshchadka-dpl {
     height: auto !important;
-}
+  }
 
-#ul-sadivie-dr{
+  #ul-sadivie-dr {
     height: auto !important;
-}
-    
+  }
 }
 
-@media only screen and (max-width :768px) {
-    
-    .br-mobile {
-        display: inline-block;
-    }
-    
-    .bt-defic-mobile {
-        display: inline-block;
-        margin-left: 2px;
-    }
-    
-    .main-service-page-list-pair .name {
+@media only screen and (max-width: 768px) {
+  .br-mobile {
+    display: inline-block;
+  }
+
+  .bt-defic-mobile {
+    display: inline-block;
+    margin-left: 2px;
+  }
+
+  .main-service-page-list-pair .name {
     width: 100%;
     font-weight: bold;
-}
+  }
 
-.main-service-page-list-pair .name::before {
+  .main-service-page-list-pair .name::before {
     content: "";
     margin-left: 0px;
     display: none;
-}
+  }
 
-.main-service-page-list-pair .value {
+  .main-service-page-list-pair .value {
     width: 100%;
-   
-}
+  }
 
-.main-service-page-list-pair {
+  .main-service-page-list-pair {
     display: flex;
     flex-direction: column;
     gap: 2px;
     margin-bottom: 10px;
-}
-    
-    .table-responsive-mobile-cor {width: 100%;}
-    
-    .table-responsive-mobile-cor th, .table-responsive-mobile-cor td {
-        padding: 6px 3px; /* Уменьшаем отступы в ячейках */
-        font-size: 14px; /* Меньший размер шрифта для улучшения читаемости */
-    }
-    
-    .table-responsive-mobile-cor th {
-        font-size: 13px;
-    }
-    
- 
+  }
 
-.table-responsive-mobile-cor .th-wider, .table-responsive-mobile-cor .td-wider {
+  .table-responsive-mobile-cor {
+    width: 100%;
+  }
+
+  .table-responsive-mobile-cor th,
+  .table-responsive-mobile-cor td {
+    padding: 6px 3px; /* Уменьшаем отступы в ячейках */
+    font-size: 14px; /* Меньший размер шрифта для улучшения читаемости */
+  }
+
+  .table-responsive-mobile-cor th {
+    font-size: 13px;
+  }
+
+  .table-responsive-mobile-cor .th-wider,
+  .table-responsive-mobile-cor .td-wider {
     min-width: 120px !important; /* Минимальная ширина каждой ячейки */
     width: 120px !important;
-}
-    
-    .table-responsive-mobile-cor td ul {
-        padding-left: 2px;
-        list-style-type: none;
-        
-    }
-    
-    .table-responsive-mobile-cor td ul li {
-        font-size: 14px !important;
-        margin-bottom: 6px;
-    }
-    
-    .table-responsive-mobile-cor td ul li::before {
-        content: "•";
-        margin-left: 3px;
-    }
-    
-    
-    
-      /*---------стили для корректного отображения содержимого таблиц на мобильных устройствах ---------------------*/
-    
-    .table-responsive-lim {}
-    
-    .table-responsive .dop-pay-txt {
-    word-wrap: break-word !important;   /* Позволяет тексту переноситься на новую строку */
-    white-space: normal;     /* Отменяет принудительное нахождение текста в одной строке */
-}
+  }
 
-.table-responsive-lim .td-tzeni-dop {
-    width: 25%;  /* или другой процент, который лучше подходит под ваш дизайн */
+  .table-responsive-mobile-cor td ul {
+    padding-left: 2px;
+    list-style-type: none;
+  }
+
+  .table-responsive-mobile-cor td ul li {
+    font-size: 14px !important;
+    margin-bottom: 6px;
+  }
+
+  .table-responsive-mobile-cor td ul li::before {
+    content: "•";
+    margin-left: 3px;
+  }
+
+  /*---------стили для корректного отображения содержимого таблиц на мобильных устройствах ---------------------*/
+
+  .table-responsive-lim {
+  }
+
+  .table-responsive .dop-pay-txt {
+    word-wrap: break-word !important; /* Позволяет тексту переноситься на новую строку */
+    white-space: normal; /* Отменяет принудительное нахождение текста в одной строке */
+  }
+
+  .table-responsive-lim .td-tzeni-dop {
+    width: 25%; /* или другой процент, который лучше подходит под ваш дизайн */
     font-size: 13px;
-}
+  }
 
-.table-responsive-lim .dop-pay-txt {
-        font-size: 14px; /* или меньше, в зависимости от ваших нужд */
-    }
-    
-    .table-responsive-lim td {
-    padding: 8px;  /* Добавляет пространство внутри ячеек */
-}
+  .table-responsive-lim .dop-pay-txt {
+    font-size: 14px; /* или меньше, в зависимости от ваших нужд */
+  }
 
-.table-responsive-lim .dop-pay-txt {
-    overflow: hidden;  /* Скрывает текст, выходящий за пределы элемента */
-    text-overflow: ellipsis;  /* Добавляет многоточие в конце обрезанного текста */
-}
-  
-.table-responsive-lim td {
+  .table-responsive-lim td {
+    padding: 8px; /* Добавляет пространст��о внутри ячеек */
+  }
+
+  .table-responsive-lim .dop-pay-txt {
+    overflow: hidden; /* Скрывает текст, выходящий за пределы элемента */
+    text-overflow: ellipsis; /* Добавляет многоточие в конце обрезанного текста */
+  }
+
+  .table-responsive-lim td {
     word-wrap: break-word !important;
     white-space: normal !important;
+  }
+
+  /*---------стили для корректного отображения содержимого таблиц на мобильных устройствах end---------------------*/
+
+  #mega-menu-item-2803 {
+    margin-top: 30px !important;
+  }
+
+  #mega-menu-item-3338 {
+    margin-top: 10px !important;
+  }
+
+  .mega-sub-menu li a {
+    font-size: 18px;
+  }
+
+  /* Стили для мобильной версии хедера */
+  .header-content {
+    flex-direction: column !important;
+    gap: 15px !important;
+    padding: 15px 0 !important;
+  }
+
+  /* 1. Логотип */
+  .header-logo {
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+
+  .header-logo img {
+    max-width: 250px !important;
+    height: auto !important;
+  }
+
+  /* 2. Информационный блок */
+  .header-info {
+    text-align: center !important;
+    min-width: unset !important;
+    width: 100% !important;
+  }
+
+  .header-title {
+    font-size: 15px !important;
+    margin-bottom: 5px !important;
+    line-height: 1.4 !important;
+  }
+
+  .header-schedule {
+    justify-content: center !important;
+    font-size: 13px !important;
+  }
+
+  /* 3. Блок с телефонами */
+  .header-phones {
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 15px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .phone-link {
+    font-size: 14px !important;
+  }
+
+  .phone-link .icon-circle {
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 28px !important;
+  }
+
+  /* 4. Блок с кнопками */
+  .header-buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important; /* Распределяем кнопки по краям */
+    gap: 10px !important;
+    width: 100% !important;
+    padding: 0 15px !important;
+  }
+
+  /* Общие стили для обеих кнопок */
+  .callback-btn,
+  .whatsapp-btn {
+    width: calc(
+      50% - 5px
+    ) !important; /* Ширина 50% минус половина отступа между кнопками */
+    font-size: 14px !important;
+    padding: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin: 0 !important;
+  }
+
+  /* Стили для кнопки WhatsApp */
+  .whatsapp-btn {
+    background: #25d366 !important;
+    color: #fff !important;
+    border-radius: 30px !important;
+  }
+
+  .whatsapp-btn .whatsapp-text {
+    display: block !important;
+    margin-right: 8px !important;
+  }
+
+  .whatsapp-btn .whatsapp-text span {
+    display: inline !important;
+    color: #fff !important;
+    font-size: 14px !important;
+  }
+
+  .whatsapp-btn img {
+    width: 30px !important;
+    height: 30px !important;
+    margin-left: 5px !important;
+  }
+
+  /* Стили для мобильного меню */
+  #mega-menu-wrap-primary #mega-menu-primary {
+    background: #ffffff !important;
+    padding: 15px !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05) !important;
+    text-align: left !important;
+  }
+
+  /* Стили для пунктов верхнего уровня */
+  #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item {
+    border-bottom: 1px solid #f5f5f5 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #mega-menu-wrap-primary .mega-menu-toggle {
+    
+    line-height: 40px !important;
+    text-align
+  }
+
+  #mega-menu-wrap-primary
+    #mega-menu-primary
+    > li.mega-menu-item
+    > a.mega-menu-link {
+    padding: 15px 20px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: #333 !important;
+    background: transparent !important;
+    transition: all 0.3s ease !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+    padding-left: 15px !important;
+  }
+
+  /* Убираем десктопные переносы строк */
+  .br-desktop {
+    display: none !important;
+  }
+
+  /* Стрелка раскрытия подменю - начальное состояние (меню закрыто) */
+  .mega-indicator {
+    border-radius: 50% !important;
+    background: #f5f5f5 !important;
+    width: 24px !important;
+    height: 24px !important;
+    text-align: center !important;
+    line-height: 24px !important;
+    transition: all 0.3s ease !important;
+    float: right !important;
+    margin-left: auto !important;
+    margin-right: 15px !important;
+    transform: rotate(
+      180deg
+    ) !important; /* Начальное положение - стрелка вниз */
+  }
+
+  /* Стрелка в активном состоянии (меню открыто) */
+  .mega-indicator[data-has-click-event="true"] {
+    transform: rotate(
+      0deg
+    ) !important; /* При открытии поворачиваем в исходное положение */
+    background: #7fc321 !important;
+    color: #fff !important;
+  }
+
+  /* Стили для активного пункта меню */
+  #mega-menu-wrap-primary
+    #mega-menu-primary
+    > li.mega-menu-item.mega-current-menu-item
+    > a.mega-menu-link {
+    color: #7fc321 !important;
+    background: rgba(127, 195, 33, 0.05) !important;
+    border-radius: 8px !important;
+  }
+
+  /* Стили для подменю */
+  #mega-menu-wrap-primary
+    #mega-menu-primary
+    > li.mega-menu-flyout
+    ul.mega-sub-menu {
+    background: #f9f9f9 !important;
+    padding: 10px 0 !important;
+    border-radius: 8px !important;
+    margin-top: 5px !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  /* Пункты подменю */
+  #mega-menu-wrap-primary
+    #mega-menu-primary
+    > li.mega-menu-flyout
+    ul.mega-sub-menu
+    li.mega-menu-item
+    a.mega-menu-link {
+    padding: 12px 25px !important;
+    font-size: 15px !important;
+    color: #555 !important;
+    background: transparent !important;
+    transition: all 0.3s ease !important;
+    border-left: 3px solid transparent !important;
+    text-align: left !important;
+    padding-left: 20px !important;
+  }
+
+  /* Эффект при наведении на пункты подменю */
+  #mega-menu-wrap-primary
+    #mega-menu-primary
+    > li.mega-menu-flyout
+    ul.mega-sub-menu
+    li.mega-menu-item
+    a.mega-menu-link:hover {
+    background: #f5f5f5 !important;
+    color: #7fc321 !important;
+    padding-left: 30px !important;
+    border-left: 3px solid #7fc321 !important;
+  }
+
+  /* Кнопка мобильного меню */
+  .mega-menu-toggle {
+    background: transparent !important;
+    padding: 10px !important;
+  }
+
+  .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner,
+  .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner::before,
+  .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner::after {
+    background-color: #333 !important;
+    height: 2px !important;
+    border-radius: 2px !important;
+  }
+
+  /* Анимация открытия подменю */
+  .mega-sub-menu {
+    animation: slideDown 0.3s ease-out !important;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
- 
+/* Дополнительные стили для очень маленьких экранов */
+@media only screen and (max-width: 375px) {
+  .header-phones {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
 
-/*---------стили для корректного отображения содержимого таблиц на мобильных устройствах end---------------------*/
-    
-    #mega-menu-item-2803 {
-        margin-top: 30px !important;
-    }
-    
-    #mega-menu-item-3338 {
-        margin-top: 10px !important;
-    }
-    
-    .mega-sub-menu li a {
-        font-size: 18px;
-    }
+  .phone-link {
+    font-size: 13px !important;
+  }
+
+  .callback-btn,
+  .whatsapp-btn {
+    width: 45% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
 }
 
-@media only screen and (max-width :415px) {
-  
-	
-	.top-single-info .button-71 {
-		margin-left:50px;
-	}
-	
-	.top-single-info .pull-right {
-		float: none !important;
-	}
-	
-	.price-col-wrapper {
+@media only screen and (max-width: 415px) {
+  .top-single-info .button-71 {
+    margin-left: 50px;
+  }
+
+  .top-single-info .pull-right {
     float: none !important;
-    
-}
-	
-	.price-col-wrapper .price-span {
-	position: relative;
-    top: 10px;		
-	
-}
-	
-	.img-measuring-wraper {
-		display: none;
-	}
-	
-	.measuring-text {
-		height: auto;
-		
-	}
-	
-	.measuring-title {
-		color: #F4B226;
-	}
-	
-	.measuring-below-text {
-		color: #333;
-	}
-    
-     .mega-sub-menu li a {
-        font-size: 18px;
-    }
-    
-    .js-ag-accordeon_title::before {
-        right: 1px;
-    }
-    
-    .js-ag-accordeon_title::after {
-        right: 1px;
-    }
-    
-    .js-ag-accordeon_title {
-        font-size: 17px;
-    }
-    
-    .messendger-btn-wraper{
+  }
+
+  .price-col-wrapper {
+    float: none !important;
+  }
+
+  .price-col-wrapper .price-span {
+    position: relative;
+    top: 10px;
+  }
+
+  .img-measuring-wraper {
+    display: none;
+  }
+
+  .measuring-text {
+    height: auto;
+  }
+
+  .measuring-title {
+    color: #f4b226;
+  }
+
+  .measuring-below-text {
+    color: #333;
+  }
+
+  .mega-sub-menu li a {
+    font-size: 18px;
+  }
+
+  .js-ag-accordeon_title::before {
+    right: 1px;
+  }
+
+  .js-ag-accordeon_title::after {
+    right: 1px;
+  }
+
+  .js-ag-accordeon_title {
+    font-size: 17px;
+  }
+
+  .messendger-btn-wraper {
     display: flex;
     justify-content: start;
     margin-top: 20px;
-}
-    
-    #centered-on-mobile{
-        margin: 0 auto;
-    }
-    
-    .car-gabariti {
+  }
+
+  #centered-on-mobile {
+    margin: 0 auto;
+  }
+
+  .car-gabariti {
     width: 100%;
-}
-    
-    .logo-img{
-        width: 100% !important;
-    }
-    
-    .header-info__text {
-  
-  margin: 0 auto;
-}
+  }
 
-.header-info__logo-title{
+  .logo-img {
+    width: 100% !important;
+  }
+
+  .header-info__text {
+    margin: 0 auto;
+  }
+
+  .header-info__logo-title {
     text-align: center;
-    margin-top:15px;
-}
+    margin-top: 15px;
+  }
 
-.top-nav{
+  .top-nav {
     margin: 0 auto;
     text-align: center;
-}
+  }
 
-.top-nav li {
+  .top-nav li {
     margin-bottom: 10px;
-}
+  }
 
-h1{
+  h1 {
     text-align: left;
     font-size: 27px;
-}
+  }
 
-.top-how-block{
+  .top-how-block {
     display: none;
-}
+  }
 
-.header-contact-info-wraper {
+  .header-contact-info-wraper {
     float: none;
     text-align: center;
     margin-top: 15px;
     line-height: 2em;
-}
+  }
 
-.header-info__phone {
+  .header-info__phone {
     display: inline;
-}
-    
-    .cities-ul-wraper li{
-        font-size: 14px;
-    }
-    
-    .text-scroll-right{
+  }
+
+  .cities-ul-wraper li {
+    font-size: 14px;
+  }
+
+  .text-scroll-right {
     display: inline-block;
     text-align: left !important;
     font-style: italic;
     line-height: 1em !important;
-    color:#7FC321;
+    color: #7fc321;
     font-size: 16px !important;
-}
+  }
 
-    
-    .footer-cities-area {
-  background: url(/wp-content/uploads/2021/10/mapmsko2-op.png) center;
-  background-position: center;
-  background-size: cover;
-}
+  .footer-cities-area {
+    background: url(/wp-content/uploads/2021/10/mapmsko2-op.png) center;
+    background-position: center;
+    background-size: cover;
+  }
 
+  .ul-single-beton > li {
+    margin: none !important;
+  }
 
-.ul-single-beton > li{
-    margin:none !important;
-    
-}
-
-
-#ul-betonnya-pl{
+  #ul-betonnya-pl {
     height: auto !important;
-}
+  }
 
-#ul-ploshchadka-dpl{
+  #ul-ploshchadka-dpl {
     height: auto !important;
-}
+  }
 
-#ul-sadivie-dr{
+  #ul-sadivie-dr {
     height: auto !important;
+  }
 }
 
-
+@media only screen and (max-width: 359px) {
+  .price-col-wrapper span {
+    font-size: 17px !important;
+  }
 }
-
-@media only screen and (max-width :359px) {
-	.price-col-wrapper span {
-		font-size: 17px !important;
-	}
-}
-
-
-
-
-
-
-
-
-
-
