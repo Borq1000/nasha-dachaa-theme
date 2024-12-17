@@ -23,600 +23,179 @@ h3 {
 }
 
 .header {
-  background: #ffffff;
-  padding: 8px 0;
+  padding: 20px 0;
+  background: #fff;
   border-bottom: 1px solid #ebebeb;
 }
 
-.header-info__logo img {
-  max-width: 180px;
-  transition: transform 0.2s ease;
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
 }
 
-.header-info__logo:hover img {
-  transform: scale(1.02);
+/* 1. Логотип */
+.header-logo img {
+  max-width: 200px;
+  height: auto;
 }
 
-.header-info__logo-title {
-  font-size: 14px;
-  color: #484848;
-  margin-top: 4px;
-  line-height: 1.3;
+/* 2. Информационный блок */
+.header-info {
+  min-width: 250px;
 }
 
-.header-working-time {
-  color: #7fc321;
-  font-size: 13px;
-  font-weight: 500;
-  margin-top: 2px;
-}
-
-/* Стили для контактов */
-.header-phone-1 {
-  color: #484848;
+.header-title {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
+  color: #222;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.header-schedule {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* 3. Блок с телефонами */
+.header-phones {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.phone-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
   transition: color 0.2s ease;
 }
 
-.header-phone-1:hover {
+.phone-link:hover {
   color: #7fc321;
 }
 
-/* Кнопка обратного звонка */
-.callback-btn {
+/* 4. Блок с кнопками */
+.header-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 200px;
+}
+
+/* Стили для кнопки заказа звонка */
+.header .callback-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 16px; /* Уменьшаем вертикальные отступы */
   background: #7fc321;
   color: #fff;
-  padding: 8px 16px;
-  border-radius: 24px;
-  font-weight: 500;
-  font-size: 15px;
-  transition: all 0.2s ease;
   border: none;
-  box-shadow: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 500;
   text-decoration: none;
-  display: inline-flex;
+  transition: all 0.2s ease;
+  position: relative;
+  top: 2px; /* Точное выравнивание по вертикали с первым телефоном */
+}
+
+.header .callback-btn:hover {
+  background: #72b01c;
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(127, 195, 33, 0.2);
+}
+
+/* Корректируем отступ для WhatsApp кнопки */
+.header .whatsapp-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f5f5f5;
+    border-radius: 30px;
+    padding: 8px 16px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    margin-top: 6px;
+    min-width: 160px;
+}
+
+.header .whatsapp-btn:hover {
+    background: #e9e9e9;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.header .whatsapp-btn .whatsapp-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    margin-right: 10px;
+}
+
+.header .whatsapp-btn .whatsapp-text span {
+    font-size: 12px;
+    color: #444;
+}
+
+.header .whatsapp-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Стили для иконок в кружках */
+.icon-circle {
+  display: flex; /* Изменено обратно на flex */
   align-items: center;
   justify-content: center;
+  width: 32px;
+  height: 32px;
+  min-width: 32px; /* Добавлено для предотвращения сжатия */
+  min-height: 32px; /* Добавлено для сохранения формы */
+  border-radius: 50%;
+  margin: 0; /* Сброс отступов */
+  padding: 0; /* Сброс отступов */
 }
 
-.callback-btn:hover {
-  background: #72b01c;
-  transform: scale(1.04);
-  color: #fff;
-  text-decoration: none;
-}
-
-/* WhatsApp кнопка */
-.whatsapp-link {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 16px;
-  border: 1px solid #dddddd;
-  border-radius: 24px;
-  color: #222222;
-  font-weight: 500;
-  font-size: 15px;
-  transition: all 0.2s ease;
-  margin-top: 5px;
-  background: transparent;
-  text-decoration: none;
-}
-
-.whatsapp-link:hover {
-  border-color: #222222;
-  color: #222222;
-  transform: scale(1.04);
-  text-decoration: none;
-}
-
-.whatsapp-text {
-  margin-right: 8px;
-}
-
-.promotion {
-  background: #f7f7f7;
-  padding: 6px 0;
-  border-bottom: 1px solid #ebebeb;
-}
-
-.promotion-text-top-left {
-  margin: 0;
-  font-size: 14px;
-  color: #222222;
-  font-weight: 500;
-}
-
-.top-nav .nav-link {
-  color: #222222;
-  font-size: 14px;
-  padding: 4px 12px;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  border: 1px solid transparent;
-  border-radius: 24px;
-}
-
-.top-nav .nav-link:hover {
-  background: #f7f7f7;
-  color: #222222;
-  transform: scale(1.04);
-}
-
-.cart__button-wrapper {
-  margin-top: 20px;
-  width: 100%;
-}
-
-.button-services-main {
-  background: #7fc321;
-  color: #fff;
-  padding: 14px 18px;
-  display: inline-block;
-  width: 100% !important;
-  font-size: 19px;
-}
-
-.button-services-main:hover {
-  background: #ef8835;
-  color: #fff;
-  text-decoration: none;
-}
-
-.service-inner {
-  border-radius: 0px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  margin-bottom: 20px;
-  height: 390px;
-  padding: 10px;
-  background: #e7dbcd87;
-  border: 1px solid #ffffff;
-}
-
-.service-inner:hover {
-  border: 1px solid #50c400;
-  box-shadow: none;
-}
-
-.btn-blue {
-  background: linear-gradient(270deg, #039be5 0%, #4fc3f7 99.48%);
-  text-shadow: 0px 1px 0px #0f8cc8;
-  color: #fff;
-}
-
-#top-area-home {
-  background: lightblue;
-  height: 480px;
-  background: url(https://design-homes.ru/images/galery/2371/dizajn-uchastka-10-sotok_5f64501442f59.jpg)
-    no-repeat;
-  -moz-background-size: cover; /* Firefox 3.6+ */
-  -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
-  -o-background-size: cover; /* Opera 9.6+ */
-  background-size: cover; /* Современные браузеры */
-}
-
-.btn-send-width {
-  width: 100%;
-  border-radius: 0px !important;
-  border-color: inherit;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.top-home-title {
-  color: #ef8835;
-  font-weight: 600 !important;
-  font-size: 26px;
-  font-family: sans-serif;
-  border-bottom: 3px solid #7fc321;
-  margin-top: 15px;
-}
-
-.list-top {
-  color: #333;
-  font-size: 22px;
-  font-family: sans-serif;
-  font-weight: normal !important;
-}
-
-.card {
-  width: 300px;
-  background: #ece6e9de;
-  padding: 10px;
-  border: 3px solid #7fc321;
-}
-
-.text-zakaz-card {
-  font-size: 18px;
-  font-weight: bold;
+/* Иконки в телефонах и времени работы */
+.phone-link .icon-circle,
+.header-schedule .icon-circle {
+  background: rgba(127, 195, 33, 0.1);
   color: #7fc321;
-  font-family: sans-serif;
-  text-transform: uppercase;
 }
 
-.card-form-main input {
-  background: none;
-  border-radius: 0px !important;
-  opacity: 100 !important;
-  color: #fff;
-  border: 2px solid #7fc321;
-}
-.card-form-main input:placeholder {
-  color: #fff !important;
+/* Иконка в кнопке заказа звонка */
+.callback-btn .icon-circle {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
 
-label.radio {
-  cursor: pointer;
-  width: 100%;
-}
-
-label.radio input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-label.radio span {
-  padding: 7px 14px;
-  border: 2px solid #eee;
-  display: inline-block;
-  color: #039be5;
-  border-radius: 10px;
-  width: 100%;
-  height: 48px;
-  line-height: 27px;
-}
-
-label.radio input:checked + span {
-  border-color: #039be5;
-  background-color: #81d4fa;
-  color: #fff;
-  border-radius: 9px;
-  height: 48px;
-  line-height: 27px;
-}
-
-.form-control {
-  margin-top: 10px;
-  height: 48px;
-  border: 2px solid #eee;
-  border-radius: 10px;
-}
-
-.form-control:focus {
-  box-shadow: none;
-  border: 2px solid #039be5;
-}
-
-.agree-text {
+/* Размер самих иконок */
+.icon-circle i {
   font-size: 14px;
-  color: #555;
-}
-
-.terms {
-  font-size: 14px;
-  text-decoration: none;
-  color: #6969d8;
-}
-
-.terms:hover {
-  color: #ef8835;
-}
-
-.confirm-button {
-  height: 50px;
-  border-radius: 10px;
-}
-
-.button {
-  line-height: 1.3rem;
-  font-size: 1.3rem;
-  font-weight: 400;
-  outline: none;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  color: #fff;
-  padding: 13px 26px;
-  border: 2px solid transparent;
-  transition: 0.25s all;
-  cursor: pointer;
-  background: #81c623;
-  border-radius: 30px;
-}
-
-#mega-menu-wrap-primary {
-  /*    border-bottom: 4px solid #548A0A !important;*/
-}
-
-.fa-check {
-  color: #8d0e0a;
-  font-size: 18px;
-
-  padding: 3px;
-  border-radius: 50px;
-
-  font-weight: normal !important;
-}
-
-#mega-menu-wrap-primary #mega-menu-primary li > a.mega-menu-link {
-  /*    line-height: 1em !important;*/
-  font-family: roboto !important;
-  /*    text-transform: uppercase !important;*/
-  /*    color:#444 !important;*/
-}
-
-/*ul.mega-sub-menu li a{
-    color:#fff !important;
-}*/
-
-.mega-sub-menu {
-  margin-top: 10px !important;
-}
-
-@media only screen and (max-width: 1000px) {
-  .br-desktop {
-    display: none;
-  }
-
-  .top-how-block {
-    position: static !important;
-  }
-}
-
-.showing--mainpage {
-  background: #514249;
-  color: #e7dbcd87;
-}
-.payment__item {
-  border-radius: 0px;
-  border-bottom: 3px solid #87cd29;
-}
-
-.feedback__nrobot label {
-  font-weight: normal;
-}
-
-.top-how-block {
-  position: relative;
-  top: -50px;
-}
-
-.services__carts {
-}
-
-#mega-menu-wrap-primary {
-  background: #c1c1c1;
-  /*    background: linear-gradient(#f5f5f5, #c1c1c1) !important;*/
-  background: #464b52a3 !important;
-}
-
-/*.mega-menu-link{
-    color: #fff !important;
-}*/
-
-/*Блоки услуг*/
-.service-p-block {
-  background: #fff;
-  border-radius: 10px;
+  line-height: 1;
+  width: auto;
   height: auto;
-  padding: 10px;
-  margin-bottom: 20px;
-
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-}
-
-.ser-cont-desc {
-  font-size: 20px;
-  font-weight: bolder;
-}
-
-.ser-cont-title {
-  margin-top: 0px;
-  font-weight: bolder !important;
-  font-size: 25px;
-  color: #555;
-  font-family: sans-serif;
-  padding: 0 0 6px 0px;
-  border-bottom: 2px solid #7fc321;
-
-  position: relative;
-  left: -10px;
-}
-
-.ser-cont-title a {
-  color: #555;
-}
-
-.bl-price {
-  font-weight: normal;
-  color: #7cbf1f;
-  font-size: 28px;
-}
-
-.service-p-txt {
-  background: #d3d1d100;
-  padding: 10px;
-}
-
-.service-p-txt ul li {
-  font-size: 18px;
-  font-family: Roboto, sans-serif;
-}
-
-.page-h1 {
-  font-size: 24px;
-  font-weight: 900;
-  color: #000;
-  text-transform: uppercase;
   margin: 0;
-  margin-left: 0px;
-  margin-left: 15px;
+  padding: 0;
 }
 
-.page-sub-header {
-  min-height: 240px;
-
-  padding-top: 10px;
-}
-
-.page-sub-header .container-fluid {
-  padding: 0px !important;
-}
-
-.row-sub-header {
-  padding: 0px;
-}
-
-.post-meta {
-  list-style-type: none;
-  font-family: sans-serif;
-}
-
-.post-meta-key {
-  display: none;
-}
-
-.bl-price {
-  font-weight: bold;
-  color: #a60602;
-  font-size: 20px;
-  padding: 5px;
-}
-
-.service-p-txt ul {
-  list-style-type: none;
-  list-style-position: inside;
-  margin-left: -40px;
-  color: #777;
-}
-
-.service-ul-wraper {
-}
-
-/*--------test----------*/
-
-.service-p-block {
-  padding: 0px !important;
-  margin-bottom: 30px;
-}
-
-.service-p-block .col-md-8 {
-  margin: 0px !important;
-}
-
-.service-p-block .col-md-4 {
-  /*    padding: 0px;*/
-  padding: 5px !important;
-}
-
-img.service-p-img {
-  margin-right: 10px !important;
-}
-
-/* breadcrumbs--*/
-
-.breadcrumb {
-  padding: 5px 15px;
-  margin-bottom: 0px;
-  list-style: none;
-  background: none !important;
-  border-radius: 4px;
-}
-
-.short-characteristics td {
-  padding: 2px !important;
-  border: none !important;
-  background: #fff;
-}
-
-.short-characteristics td.ch-tit:before {
-  content: "»";
-  font-size: 20px;
-  margin-right: 5px;
-  font-weight: bolder;
-  color: #7fc321;
-}
-
-p.short-desc {
-  padding: 4px;
-}
-
-table.short-characteristics {
-  border: none !important;
-
-  border-top: 1px dotted #a60602 !important;
-}
-
-.ras-sp {
-  text-decoration: underline;
-  margin-top: 4px;
-  position: relative;
-  bottom: -5px;
-}
-
-img#akcia-1 {
-  width: 80px !important;
-  height: 45px !important;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  z-index: 1;
-}
-
-.single-info-inner {
-  /*    background: #fcfcfce6;*/
-  /*    border: 1px solid #7FC32136;*/
-
-  padding: 10px;
-  padding-left: 0px;
-}
-
-.single-info-inner .col-md-8 {
-  padding-left: 4px;
-}
-
-.top-single-info {
-  background: #fff;
-  padding: 10px;
-  margin-bottom: 40px;
-  border-radius: 0px;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
-    rgba(17, 17, 26, 0.1) 0px 0px 8px;
-  color: hsl(230, 2.8%, 42%);
-}
-
-.bottom-border-grey {
-  display: inline-block;
-
-  margin: 0px;
-  padding: 0px;
-}
-
-.single-info-atention {
-  padding: 10px;
-  line-height: 1.5em;
-  margin-bottom: 20px;
-  color: #514249;
-  background: #f8d7bc;
-}
-
-.h-dear-clients {
-  font-weight: bold;
-}
-
-.intro-txt-atention {
-  font-weight: bold;
-}
-
-.desc-od-work {
-  padding: 10px;
-  border: 1px solid #f4f4f4e6;
-  border-radius: 20px;
-  border-bottom: 5px solid #7fc321;
-  border-top: 5px solid #7fc321;
+/* Отступы между иконкой и текстом */
+.phone-link,
+.header-schedule,
+.callback-btn {
+  gap: 10px;
 }
 
 .aditional-pay {
@@ -3406,7 +2985,7 @@ a.mega-menu-link {
   color: #fff;
 }
 
-/*----------СТИЛИ ��АЛЬКУЛЯТОРОВ ЗАКАНЧИВЫЮТСЯ ЗДЕСЬ-------------------*/
+/*----------СТИЛИ ��АЛЬКУЛЯТОРОВ З��КАНЧИВЫЮТСЯ ЗДЕСЬ-------------------*/
 
 .ag-accordeon_info {
   display: none;
@@ -3766,81 +3345,7 @@ a.mega-menu-link {
   }
 }
 
-/* Стили для секции детальных услуг */
-.detailed-services-wraper {
-  padding: 60px 0;
-  background: #ffffff;
-}
-
-.detailed-services-wraper .h3 {
-  font-size: 32px;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 50px;
-  color: #222222;
-}
-
-.detailed-service-item-wraper {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
-}
-
-.detailed-service-category-title {
-  font-size: 20px;
-  font-weight: 600;
-  color: #222222;
-  margin-bottom: 25px;
-  padding-bottom: 15px;
-  border-bottom: 2px solid #f0f7eb;
-  text-align: center;
-}
-
-.detailed-service-ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.detailed-service-ul li {
-  margin-bottom: 12px;
-}
-
-.detailed-service-ul li a {
-  color: #222222;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 14px 20px;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  border-radius: 12px;
-  background: #f8f9fa;
-}
-
-.detailed-service-ul li a:before {
-  content: "\f061"; /* FontAwesome arrow-right */
-  font-family: "FontAwesome";
-  margin-right: 15px;
-  color: #7fc321;
-  font-size: 14px;
-  transition: all 0.3s ease;
-}
-
-.detailed-service-ul li:hover a {
-  color: #7fc321;
-  background: #f0f7eb;
-  transform: translateX(5px);
-}
-
-.detailed-service-ul li:hover a:before {
-  transform: translateX(3px);
-}
-
-/* Адаптивность */
-@media (max-width: 768px) {
+  /* Стили для секции детальных услуг */
   .detailed-services-wraper {
     padding: 40px 20px;
   }
@@ -4299,4 +3804,47 @@ a.mega-menu-link {
     margin-top: 40px;
     padding: 20px;
   }
+}
+
+/* Стили для иконок в хедере */
+.header .phone-link i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  background: rgba(127, 195, 33, 0.1);
+  border-radius: 50%;
+  color: #7fc321;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.header .header-schedule i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  background: rgba(127, 195, 33, 0.1);
+  border-radius: 50%;
+  color: #7fc321;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.header .callback-btn i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 14px;
+  margin-right: 10px;
 }

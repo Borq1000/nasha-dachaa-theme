@@ -67,129 +67,89 @@
     </head>
     <body <?php body_class(); ?>>
         <div class="main" id="main">
+            <section class="promotion">
+                <div class="row">
+                    <div class="col-md-6" style="padding: 0px;margin:0px;">
+                        <p class="promotion-text-top-left">
+                            <i class="far fa-clock" style="color: #7fc321; margin-right: 5px;"></i>
+                            Регион: Московская область
+                        </p>
+                    </div>
+                    <div class="col-md-6" style="padding: 0px;margin:0px;">
+                        <ul class="nav justify-content-end top-nav pull-right" style="padding: 0px;margin:0px;">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/o-nas/"> О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/projects/" title="Наши работы"> Примеры работ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/articles/"> Полезные статьи</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/kontakty/"> Контакты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://wa.me/79778075987" class="whatsapp-link top-nav-whatsapp">
+                                    <span class="whatsapp-text">WhatsApp</span>
+                                    <i class="whatsapp-icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
             <header class="header">
-                <section class="promotion">
-                    <div class="container">
-                        <div class="row" >
-                            <div class="col-md-6" style="padding: 0px;margin:0px;">
-                                <p class="promotion-text-top-left">
-                                    Регион: Московская область 
-
-                                </p>
-
-                            </div>
-                            <div class="col-md-6" style="padding: 0px;margin:0px;">
-                                <ul class="nav justify-content-end top-nav pull-right" style="padding: 0px;margin:0px;">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/o-nas/"> О нас</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/projects/" title="Наши работы"> Примеры работ</a>
-                                    </li>
-<!--                                    <li class="nav-item">
-                                        <a class="nav-link" href="/otzyvy/" title="Отзывы"> Отзывы</a>
-                                    </li>-->
-                                   
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/articles/"> Полезные статьи</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/kontakty/"> Контакты</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="https://wa.me/79778075987" class="whatsapp-link top-nav-whatsapp">
-                                            <span class="whatsapp-text">WhatsApp</span>
-                                            <i class="whatsapp-icon"></i>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-
-
-                <section class="header-info">
-                    <div class="container">
-                        <div class="row" id="centered-on-mobile" itemscope itemtype="https://schema.org/Organization">
-                            <div class="col-lg-7 col-md-6 col-sm-6 col-xs-6">
-                                <div class="header-info__text clearfix">
-                                    <a class="header-info__logo" href="/" >
-                                        <img src="/wp-content/uploads/2021/11/nd-logo-new.png" style="width:250px;" class="logo-img">
-                                    </a>
-
-                                    <div class="header-info__logo-title">
-                                        Благоустройство участка в Москве<br> и Подмосковье
-                                        <br>
-                                        <span class="header-working-time">Ежедневно с 9.00 до 20.00</span>
-                                    </div>
-                                </div>
-                                <div class="hidden" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                                    <span itemprop="addressCountry">Россия</span>
-                                    <span itemprop="addressLocality">Москва</span>
-                                    <span itemprop="streetAddress">г. Москва, ул. Коктебельская, 11</span>
-                                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            </div>
-                            <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6">
-                                <div class="header-info__contacts clearfix">
-                                    <a class="btn button callback-btn header-callback-btn sg-popup-id-4027" href="">
-                                        Заказать звонок</a>
-
-
-
-
-
-
-
-
-
-                                    <div class="header-contact-info-wraper">
-
-
-
-
-                                        <a class="header-info__phone link" href="tel:+7 (977) 807-59-87">
-                                            <span itemprop="telephone" class="header-phone-1">+7 (977) 807-59-87</span>
-                                        </a>
-                                        <br>
-                                        <a class="header-info__phone link" href="tel:+74952276727" style="margin-top:0px;">
-                                            <span itemprop="telephone" class="header-phone-1">+7 (495) 227-67-27</span>
-                                        </a>
-                                        <br>
-                                        
-                                        <a href="https://wa.me/79778075987" class="whatsapp-link">
-                                <span class="whatsapp-text">WhatsApp</span> <i class="whatsapp-icon"></i>
+                <div class="container">
+                    <div class="header-content">
+                        <!-- 1. Логотип -->
+                        <div class="header-logo">
+                            <a href="/">
+                                <img src="https://nasha-dachaa.ru/wp-content/uploads/2021/11/nd-logo-new.png" alt="Наша Дача">
                             </a>
+                        </div>
 
-
-                                    </div>
-                                </div>
+                        <!-- 2. Информационный блок -->
+                        <div class="header-info">
+                            <div class="header-title">Благоустройство участка в Москве<br>и Подмосковье</div>
+                            <div class="header-schedule">
+                                <i class="far fa-clock icon-circle"></i>
+                                Ежедневно с 9.00 до 20.00
                             </div>
                         </div>
 
+                        <!-- 3. Блок с телефонами -->
+                        <div class="header-phones">
+                            <a href="tel:+79778075987" class="phone-link">
+                                <i class="fas fa-phone-alt icon-circle"></i>
+                                <span>+7 (977) 807-59-87</span>
+                            </a>
+                            <a href="tel:+74952276727" class="phone-link">
+                                <i class="fas fa-phone-alt icon-circle"></i>
+                                <span>+7 (495) 227-67-27</span>
+                            </a>
+                        </div>
+
+                        <!-- 4. Блок с кнопками -->
+                        <div class="header-buttons">
+                            <a href="" class="callback-btn sg-popup-id-4027">
+                                <i class="fas fa-headset"></i>
+                                Заказать звонок
+                            </a>
+                            <a href="https://wa.me/79778075987" class="whatsapp-btn">
+                                <div class="whatsapp-text">
+                                    <span>Написать</span>
+                                    <span>на WhatsApp</span>
+                                </div>
+                                <img src="/wp-content/uploads/2024/12/wsp.png" alt="WhatsApp">
+                            </a>
+                        </div>
                     </div>
-                </section>
+                </div>
 
                 <div id="main-menu-wraper" style="margin-top:20px;">
-                    <!---------------------------main menu start------------------------------------------>
-
-                    <?php
-                    wp_nav_menu(array(
+                    <?php wp_nav_menu(array(
                         'menu' => 'Primary Menu',
                         'theme_location' => 'primary',
                         'depth' => 2,
@@ -199,9 +159,7 @@
                         'menu_class' => 'nav navbar-nav navbar-left text-uppercase',
                         'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
                         'walker' => new wp_bootstrap_navwalker())
-                    );
-                    ?>
-
-                    <!-------------------main menu end----------------------------------------------------->
+                    ); ?>
                 </div>
             </header>
+        </div>
