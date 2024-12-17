@@ -1,8 +1,14 @@
 <section style="background:url(/wp-content/uploads/2021/11/how-we-work-bg.png) no-repeat;background-size: cover;padding-bottom: 70px;">
-    <div class="container" style="margin-top:70px;">
-        <div class="h3">
+<div class="container">
+<div class="row">
+<div class="h3">
             Как мы работаем
         </div>
+</div>
+</div>
+
+<div class="container" style="margin-top:70px;">
+        
         <div class="col-md-2 col-sm-2 col-xs-6 card-wrapper">
             <div class="card-header-hww">
 
