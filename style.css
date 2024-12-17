@@ -4059,7 +4059,7 @@ a.mega-menu-link {
     color: #7fc321 !important;
 }
 
-/* Принудительно меняем цвет текста пунктов меню */
+/* Принудительно меняем цвет текста п��нктов меню */
 #mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2801 > a.mega-menu-link,
 #mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2803 > a.mega-menu-link {
     color: #222 !important;
@@ -4133,4 +4133,61 @@ a.mega-menu-link {
 #main-menu-wraper {
     margin: 0 !important; /* Убираем margin */
     padding: 0 !important;
+}
+
+/* Стили для блока преимуществ */
+.top-how-block {
+    padding: 25px 0;
+    background: #fff;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.advantages-grid {
+    padding: 10px 0;
+}
+
+.advantage-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(127, 195, 33, 0.15);
+    border-radius: 12px;
+    background: #fff;
+}
+
+.advantage-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(127, 195, 33, 0.3);
+    box-shadow: 0 5px 20px rgba(127, 195, 33, 0.08);
+}
+
+.advantage-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 15px rgba(127, 195, 33, 0.12);
+    border: 2px solid #7fc321;
+    padding: 12px;
+}
+
+.advantage-icon img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.advantage-text {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #444;
+    font-weight: 500;
+    margin: 0;
 }

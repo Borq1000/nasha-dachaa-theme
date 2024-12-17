@@ -605,3 +605,26 @@
     font-size: 17px !important;
   }
 }
+
+/* Медиа-запросы для блока преимуществ */
+@media (max-width: 991px) {
+    .advantage-card {
+        margin-bottom: 20px;
+    }
+    
+    .advantage-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .advantage-icon img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .top-how-block {
+        display: none !important;
+    }
+}

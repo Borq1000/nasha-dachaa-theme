@@ -1,85 +1,72 @@
-<div class="top-how-block">
+<div class="top-how-block d-none d-md-block">
     <div class="container">
-
-        <div class="payment__list">
-            <div class="row">
-
-                <div class=" col-lg-2 col-md-6 col-sm-3 col-xs-6">
-                    <div class="payment__item" >
-                        <div class="payment__item-wrapper">
-                            <center>
-                                <img src="/wp-content/uploads/2021/10/tk1.png" width="70" style="margin:0px;margin-top: 10px;">
-                            </center>
-                            <div class="payment__item-title">Работаем с соблюдением всех технологий</div>
-
+        <div class="advantages-grid">
+            <div class="row justify-content-between">
+                <div class="col-lg-2 col-md-4">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <img src="/wp-content/uploads/2021/10/tk1.png" alt="Технологии">
                         </div>
-                    </div>
-                </div>
-                <div class=" col-lg-2 col-md-6 col-sm-3 col-xs-6">
-                    <div class="payment__item" >
-                        <div class="payment__item-wrapper">
-                            <center>
-                                <img src="/wp-content/uploads/2021/10/gm1.png" width="70" style="margin:0px;margin-top: 10px;">
-                            </center>
-                            <div class="payment__item-title">Используем только качественные материалы</div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-lg-2 col-md-6 col-sm-3 col-xs-6">
-                    <div class="payment__item" >
-                        <div class="payment__item-wrapper">
-                            <center>
-                                <img src="/wp-content/uploads/2021/10/msr1.png" width="70" style="margin:0px;margin-top: 10px;">
-                            </center>
-                            <div class="payment__item-title">Бесплатный выезд на объект для технических замеров</div>
-
+                        <div class="advantage-text">
+                            Работаем с соблюдением технологий
                         </div>
                     </div>
                 </div>
 
-
-                <div class=" col-lg-2 col-md-6 col-sm-3 col-xs-6">
-                    <div class="payment__item" >
-                        <div class="payment__item-wrapper">
-                            <center>
-                                <img src="/wp-content/uploads/2021/10/st1.png" width="70" style="margin:0px;margin-top: 10px;">
-                            </center>
-                            <div class="payment__item-title">Все работники сертифицированные специалисты</div>
-
+                <div class="col-lg-2 col-md-4">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <img src="/wp-content/uploads/2021/10/gm1.png" alt="Материалы">
+                        </div>
+                        <div class="advantage-text">
+                            Качественные материалы
                         </div>
                     </div>
                 </div>
 
-
-                <div class=" col-lg-2 col-md-6 col-sm-3 col-xs-6">
-                    <div class="payment__item" >
-                        <div class="payment__item-wrapper">
-                            <center>
-                                <img src="/wp-content/uploads/2021/10/work.png" width="70" style="margin:0px;margin-top: 10px;">
-                            </center>
-                            <div class="payment__item-title">Подготовительные работы и установка оборудования в одинь день</div>
-
+                <div class="col-lg-2 col-md-4">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <img src="/wp-content/uploads/2021/10/msr1.png" alt="Замеры">
+                        </div>
+                        <div class="advantage-text">
+                            Бесплатный выезд на замеры
                         </div>
                     </div>
                 </div>
 
-                <div class=" col-lg-2 col-md-6 col-sm-3 col-xs-6">
-                    <div class="payment__item" >
-                        <div class="payment__item-wrapper">
-                            <center>
-                                <img src="/wp-content/uploads/2021/10/ct1.png" width="70" style="margin:0px;margin-top: 10px;">
-                            </center>
-                            <div class="payment__item-title">Гарантия качества и лучшие цены на рынке</div>
-
+                <div class="col-lg-2 col-md-4">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <img src="/wp-content/uploads/2021/10/st1.png" alt="Специалисты">
+                        </div>
+                        <div class="advantage-text">
+                            Сертифицированные специалисты
                         </div>
                     </div>
                 </div>
 
+                <div class="col-lg-2 col-md-4">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <img src="/wp-content/uploads/2021/10/work.png" alt="Сроки">
+                        </div>
+                        <div class="advantage-text">
+                            Все работы за один день
+                        </div>
+                    </div>
+                </div>
 
-
-
-
+                <div class="col-lg-2 col-md-4">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <img src="/wp-content/uploads/2021/10/ct1.png" alt="Гарантия">
+                        </div>
+                        <div class="advantage-text">
+                            Гарантия лучшей цены
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
