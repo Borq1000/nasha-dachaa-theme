@@ -4143,3 +4143,160 @@ a.mega-menu-link {
     font-size: 16px; /* Увеличен для мобильных */
   }
 }
+
+/* Стили для hero секции */
+.hero-section {
+  position: relative;
+  padding: 80px 0;
+  background: url("h/wp-content/uploads/2024/12/new-home-banner.jpg")
+    center/cover no-repeat;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  display: block;
+  font-size: 24px;
+  margin-top: 15px;
+  color: #7fc321;
+}
+
+.hero-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-features li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.hero-features li i {
+  width: 40px;
+  height: 40px;
+  background: rgba(127, 195, 33, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  color: #7fc321;
+  font-size: 18px;
+}
+
+/* Стили для формы */
+.contact-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card-title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #222222;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+  height: 50px;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+  border-color: #7fc321;
+  box-shadow: none;
+}
+
+.contact-form .btn {
+  background: #7fc321;
+  border: none;
+  height: 50px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  background: #72b01c;
+  transform: translateY(-2px);
+}
+
+.form-privacy {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.form-privacy a {
+  color: #7fc321;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0;
+    min-height: auto;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .hero-features li {
+    font-size: 16px;
+  }
+
+  .contact-card {
+    margin-top: 40px;
+    padding: 20px;
+  }
+}
