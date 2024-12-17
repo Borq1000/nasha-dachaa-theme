@@ -663,14 +663,57 @@ function construction_project_images_metabox_callback($post) {
     }
 }
 
-remove_filter('the_content', 'wpautop');
-remove_filter('the_excerpt', 'wpautop');
+// Единая функция для отключения форматирования
+function disable_all_wp_formatting() {
+    remove_filter('the_content', 'wpautop');
+    remove_filter('the_content', 'wptexturize');
+    remove_filter('comment_text', 'wpautop');
+    remove_filter('the_excerpt', 'wpautop');
+    remove_filter('the_excerpt', 'wptexturize');
+}
+add_action('init', 'disable_all_wp_formatting', 1);
 
+// Единая функция для защиты HTML комментариев
+function protect_html_comments($content) {
+    if (strpos($content, '<!--') !== false) {
+        $content = preg_replace('/<!--(.|\s)*?-->/', '<!--protectedhtml-->$0<!--/protectedhtml-->', $content);
+    }
+    return $content;
+}
+add_filter('the_content', 'protect_html_comments', 999);
 
+// Единая функция для очистки пустых тегов
+function clean_empty_p_tags($content) {
+    $content = preg_replace('/<p[^>]*>[\s|&nbsp;]*<\/p>/', '', $content);
+    return $content;
+}
+add_filter('the_content', 'clean_empty_p_tags', 999);
 
+// Отключаем визуальный редактор
+add_filter('user_can_richedit', '__return_false');
 
+// Отключаем конвертацию переносов строк в br и p
+remove_filter('the_content', 'nl2br');
 
+// Создаем шорткод для защиты HTML от форматирования WordPress
+function raw_html_shortcode($attrs, $content = null) {
+    remove_all_filters('the_content');
+    $content = str_replace(array('<p>', '</p>', '<br>', '<br/>', '<br />'), '', $content);
+    add_filter('the_content', 'do_shortcode', 11);
+    return trim($content);
+}
+add_shortcode('raw_html', 'raw_html_shortcode');
 
+// Добавляем поддержку HTML5
+add_theme_support('html5', array('script', 'style'));
 
-
+// Отключаем автоформатирование для определенных тегов
+function disable_autop_for_specific_tags($content) {
+    if (strpos($content, '<div') !== false) {
+        $content = preg_replace('/<p>\\s*?(<div.*?>)/s', '$1', $content);
+        $content = preg_replace('/(<\\/div>)\\s*?<\\/p>/s', '$1', $content);
+    }
+    return $content;
+}
+add_filter('the_content', 'disable_autop_for_specific_tags', 99);
 

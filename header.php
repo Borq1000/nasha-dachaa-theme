@@ -7,16 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
         <link rel="shortcut icon" href="/wp-content/uploads/2022/03/favicon.png" type="image/png">
 
 
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/bootstrap.min.css">
-
-
 
         <!--        <link rel="preconnect" href="https://fonts.googleapis.com">
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,10 +26,6 @@
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/media.css?v=<?php echo time();  ?>"/>
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/buttons.css"/>
         <script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/jquery-3.2.1.min.js"></script>
-
-
-        
-        
 
 
         <!-----------------Calculators files----------------------->
@@ -103,6 +95,12 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="/kontakty/"> Контакты</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://wa.me/79778075987" class="whatsapp-link top-nav-whatsapp">
+                                            <span class="whatsapp-text">WhatsApp</span>
+                                            <i class="whatsapp-icon"></i>
+                                        </a>
                                     </li>
                                     
                                 </ul>

@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 
+
 <section style="padding: 40px 0 35px;
          background: url(<?php header_image(); ?>);
          background-repeat: no-repeat;
