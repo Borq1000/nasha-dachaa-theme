@@ -23,7 +23,7 @@ h3 {
 }
 
 .header {
-  padding: 10px 0;
+  padding: 10px 0 0 0; /* Верхний padding оставляем, нижний убираем */
   background: #fff;
   border-bottom: 1px solid #ebebeb;
 }
@@ -33,6 +33,7 @@ h3 {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+  padding-bottom: 15px;
 }
 
 /* 1. Логотип */
@@ -3345,7 +3346,7 @@ a.mega-menu-link {
   }
 }
 
-  /* Стили для секции детальных ус����уг */
+  /* Стили для секции детальных ус��������������уг */
   .detailed-services-wraper {
     padding: 40px 20px;
   }
@@ -3981,4 +3982,155 @@ a.mega-menu-link {
 
 .top-whatsapp-link .whatsapp-icon {
     margin-left: 6px;
+}
+
+/* Стили для главного меню */
+#mega-menu-wrap-primary {
+    background: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.04) !important;
+    padding: 0 !important;
+    margin: 0 !important; /* Убираем margin */
+}
+
+/* Сброс всех возможных фоновых стилей */
+#mega-menu-wrap-primary,
+#mega-menu-wrap-primary #mega-menu-primary,
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item,
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link,
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link,
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link,
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-toggle-on > a.mega-menu-link,
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
+    background: #f7f7f7 !important;
+    background-color: #f7f7f7 !important;
+}
+
+/* Стили для подменю */
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-flyout ul.mega-sub-menu,
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu {
+    background: #f7f7f7 !important;
+    background-color: #f7f7f7 !important;
+}
+
+/* Стили для пунктов подменю */
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link,
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-item a.mega-menu-link {
+    background: #f7f7f7 !important;
+    background-color: #f7f7f7 !important;
+}
+
+/* Стили при наведении на пункты подменю */
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:hover,
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:hover {
+    background: #ebebeb !important;
+    background-color: #ebebeb !important;
+    color: #7fc321 !important;
+}
+
+/* Стили для активных пунктов подменю */
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item.mega-current-menu-item > a.mega-menu-link {
+    background: #f7f7f7 !important;
+    background-color: #f7f7f7 !important;
+}
+
+/* Стили для мобильной кнопки */
+.mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner,
+.mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner::before,
+.mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner::after {
+    background-color: #333;
+}
+
+/* Стили для текста "Каталог услуг" в мобильном меню */
+.mobile-text-catalog {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Принудительно меняем цвет текста пункта меню */
+#mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2801 > a.mega-menu-link {
+    color: #222 !important;
+    text-align: center;
+}
+
+/* На всякий случай добавим стиль для состояния при наведении */
+#mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2801 > a.mega-menu-link:hover {
+    color: #7fc321 !important;
+}
+
+/* Принудительно меняем цвет текста пунктов меню */
+#mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2801 > a.mega-menu-link,
+#mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2803 > a.mega-menu-link {
+    color: #222 !important;
+    text-align: center;
+}
+
+/* Стили для состояния при наведении */
+#mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2801 > a.mega-menu-link:hover,
+#mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2803 > a.mega-menu-link:hover {
+    color: #7fc321 !important;
+}
+
+/* ��тили для пунктов верхнего уровня */
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    color: #333 !important;
+    padding: 12px 20px !important; /* Уменьшены отступы */
+    text-transform: none !important;
+    letter-spacing: 0.3px !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    background: transparent !important;
+    height: auto !important;
+    margin: 0 !important; /* Убираем margin */
+}
+
+/* Активные пункты меню - современный эффект */
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link,
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link {
+    color: #7fc321 !important;
+    background: transparent !important;
+    position: relative !important;
+}
+
+/* Эффект подсветки для активного пункта */
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link:before,
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link:before {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 20px !important;
+    right: 20px !important;
+    height: 3px !important;
+    background: linear-gradient(90deg, #7fc321 0%, #95e62c 100%) !important;
+    border-radius: 3px !important;
+    box-shadow: 0 2px 8px rgba(127, 195, 33, 0.3) !important;
+}
+
+/* Эффект при наведении */
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 20px !important;
+    right: 20px !important;
+    height: 3px !important;
+    background: linear-gradient(90deg, #7fc321 0%, #95e62c 100%) !important;
+    transform: scaleX(0) !important;
+    transition: transform 0.3s ease !important;
+    border-radius: 3px !important;
+    box-shadow: 0 2px 8px rgba(127, 195, 33, 0) !important;
+}
+
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:hover:after {
+    transform: scaleX(1) !important;
+    box-shadow: 0 2px 8px rgba(127, 195, 33, 0.3) !important;
+}
+
+/* Стили для контейнера меню */
+#main-menu-wraper {
+    margin: 0 !important; /* Убираем margin */
+    padding: 0 !important;
 }
