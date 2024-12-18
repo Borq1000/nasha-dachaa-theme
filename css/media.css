@@ -409,7 +409,7 @@
     border-left: 3px solid #7fc321 !important;
   }
 
-  /* Кнопка мобильного меню */
+  /* Кнопка мобильного мен�� */
   .mega-menu-toggle {
     background: transparent !important;
     padding: 10px !important;
@@ -697,5 +697,202 @@
         width: 30px;
         height: 30px;
         font-size: 14px;
+    }
+}
+
+/* Адаптивные стили для блоков услуг */
+@media (max-width: 991px) {
+    .top-single-info {
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+
+    #carousel-zaezd-ekonom .item img {
+        height: 250px;
+    }
+
+    .service-div-h3 a {
+        font-size: 24px;
+    }
+
+    .short-desc {
+        font-size: 15px;
+    }
+
+    .main-service-page-list-wrapper {
+        padding: 15px;
+    }
+
+    .main-service-page-list-pair {
+        padding: 8px 0;
+    }
+
+    .js-ag-accordeon_title {
+        font-size: 15px;
+        padding: 12px 15px;
+    }
+
+    .ag-accordeon_content {
+        padding: 0 15px 12px;
+        font-size: 14px;
+    }
+
+    .button-71 {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    #akcia-1 {
+        width: 80px;
+        top: -10px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-single-info {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .service-p-txt {
+        margin-top: 20px;
+    }
+
+    #carousel-zaezd-ekonom .item img {
+        height: 200px;
+    }
+
+    #thumbcarousel .thumb {
+        width: 60px;
+        height: 45px;
+        margin: 0 3px;
+    }
+
+    .service-div-h3 {
+        margin: 15px 0;
+        padding-bottom: 10px;
+    }
+
+    .service-div-h3 a {
+        font-size: 20px;
+    }
+
+    .main-service-page-list-pair {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+
+    .main-service-page-list-pair .name {
+        margin-bottom: 5px;
+        font-weight: 600;
+        color: #222222;
+    }
+
+    .main-service-page-list-pair .value {
+        text-align: left;
+    }
+
+    .p-price {
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .button-71 {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .col-md-4 .pull-right {
+        float: none !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .top-single-info {
+        padding: 12px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    #carousel-zaezd-ekonom {
+        margin-bottom: 10px;
+    }
+
+    #carousel-zaezd-ekonom .item img {
+        height: 180px;
+        border-radius: 8px;
+    }
+
+    #thumbcarousel {
+        margin-top: 10px;
+    }
+
+    .service-div-h3 {
+        margin: 12px 0;
+    }
+
+    .service-div-h3 a {
+        font-size: 18px;
+    }
+
+    .short-desc {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .main-service-page-list-wrapper {
+        padding: 12px;
+        margin-bottom: 20px;
+    }
+
+    .main-service-page-list-pair {
+        padding: 8px 0;
+    }
+
+    .main-service-page-list-pair .name,
+    .main-service-page-list-pair .value {
+        font-size: 14px;
+    }
+
+    .one-qa-block {
+        margin: 15px 0;
+    }
+
+    .js-ag-accordeon_title {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .before-q {
+        font-size: 18px;
+    }
+
+    .ag-accordeon_content {
+        padding: 0 12px 10px;
+        font-size: 13px;
+    }
+
+    .p-price {
+        font-size: 16px;
+    }
+
+    .bl-price {
+        font-size: 20px;
+    }
+
+    .button-71 {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    #akcia-1 {
+        width: 60px;
+        top: -8px;
+        right: 10px;
     }
 }
