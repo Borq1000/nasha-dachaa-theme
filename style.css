@@ -3311,7 +3311,7 @@ a.mega-menu-link {
   border: none;
 }
 
-/* Изображен��е услуги */
+/* Изображен����������е услуги */
 .img-services {
   width: 100% !important;
   height: 240px;
@@ -4079,7 +4079,7 @@ a.mega-menu-link {
     background-color: #f7f7f7 !important;
 }
 
-/* Стили для моби����ной кнопки */
+/* Сти����и дл�� моби����ной кнопки */
 .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner,
 .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner::before,
 .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner::after {
@@ -6735,12 +6735,12 @@ h2.style-shadow::first-letter {
     gap: 10px;
 }
 
-/* Добавляем стили для иконок в кружках */
+/* Добавляем стил�� для иконок в кружках */
 .related-projects-time i,
 .related-projects-area i {
     width: 32px;
     height: 32px;
-    min-width: 32px; /* Добавляем min-width для сохранения формы */
+    min-width: 32px; /* Доб��вляем min-width для сохранения формы */
     min-height: 32px; /* Добавляем min-height для сохранения формы */
     background: rgba(127, 195, 33, 0.1);
     border-radius: 50%;
@@ -6750,7 +6750,7 @@ h2.style-shadow::first-letter {
     color: #7fc321;
     font-size: 14px;
     transition: all 0.3s ease;
-    flex-shrink: 0; /* Предотвращаем сжатие */
+    flex-shrink: 0; /* Предотвр��щаем сжатие */
 }
 
 .related-projects-thumbnail:hover .related-projects-time i,
@@ -6758,4 +6758,431 @@ h2.style-shadow::first-letter {
     background: #7fc321;
     color: #ffffff;
     transform: scale(1.1);
+}
+
+.single-project-page-section-1 {
+    padding: 40px 0;
+    background: #fff;
+}
+
+.project-main-img-araper {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-main-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.project-main-img:hover {
+    transform: scale(1.02);
+}
+
+.project-info-wraper-1 {
+    padding: 0 20px;
+}
+
+.project-info-wraper-1 h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.characteristics-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.char {
+    flex: 1;
+    min-width: 150px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.char:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.char .s-1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #F4B226;
+    margin-bottom: 8px;
+}
+
+.char .s-2 {
+    font-size: 14px;
+    color: #666;
+}
+
+.characteristics-2-location {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.characteristics-2__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.characteristics-2__row:last-child {
+    border-bottom: none;
+}
+
+.characteristics-2__row .sp-1 {
+    font-weight: 500;
+    color: #666;
+}
+
+.wrp-1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.wrp-1 ul li {
+    padding: 15px;
+    margin-bottom: 12px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(127, 195, 33, 0.1);
+}
+
+.wrp-1 ul li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-color: rgba(127, 195, 33, 0.2);
+}
+
+.wrp-1 ul li .project-info-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    background: rgba(127, 195, 33, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.wrp-1 ul li:hover .project-info-icon {
+    background: #7fc321;
+}
+
+.wrp-1 ul li .project-info-icon i {
+    font-size: 16px;
+    color: #7fc321;
+    transition: all 0.3s ease;
+}
+
+.wrp-1 ul li:hover .project-info-icon i {
+    color: #ffffff;
+}
+
+.wrp-1 ul li .project-info-content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrp-1 ul li .project-info-label {
+    font-weight: 500;
+    color: #444444;
+    margin: 0;
+}
+
+.wrp-1 ul li .project-info-value {
+    color: #7fc321;
+    font-weight: 600;
+    margin: 0;
+}
+
+.wrp-2 {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+}
+
+.wrp-2 p strong {
+    font-size: 20px;
+    color: #333;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.before-after-section {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.before-after-text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.img-before-after {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.img-before-after:hover {
+    transform: scale(1.02);
+}
+
+.project-gallery-section {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.project-gallery-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-gallery-item {
+    margin-bottom: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.img-project-gallery {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.img-project-gallery:hover {
+    transform: scale(1.05);
+}
+
+.project-description-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.main-text-home {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.main-text-home p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .project-info-wraper-1 {
+        padding: 20px 0;
+    }
+    
+    .characteristics-1 {
+        flex-direction: column;
+    }
+    
+    .char {
+        width: 100%;
+    }
+    
+    .project-gallery-item {
+        margin-bottom: 20px;
+    }
+}
+
+.guarantee-section {
+    padding: 40px 0;
+    background: linear-gradient(45deg, #f8f9fa, #fff);
+    text-align: center;
+}
+
+.guarantee-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2em;
+    color: #F4B226;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.bread-crumbs {
+    padding: 15px 0;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+
+.bread-crumbs ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.bread-crumbs ul li {
+    font-size: 14px;
+    color: #666;
+}
+
+.bread-crumbs ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.bread-crumbs ul li a:hover {
+    color: #F4B226;
+}
+
+.section-queries {
+    background: linear-gradient(135deg, #333 0%, #1a1a1a 100%);
+    padding: 60px 0;
+    color: #fff;
+}
+
+.section-queries .h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-queries .h3:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #F4B226;
+}
+
+@media (max-width: 768px) {
+    .guarantee-text {
+        font-size: 1.8em;
+    }
+    
+    .bread-crumbs {
+        padding: 10px 0;
+    }
+    
+    .bread-crumbs ul {
+        gap: 5px;
+    }
+    
+    .section-queries {
+        padding: 40px 0;
+    }
+    
+    .section-queries .h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Стили для блока характеристик проекта */
+.characteristics-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Фиксированные 3 колонки */
+    gap: 15px; /* Уменьшен отступ между элементами */
+    margin: 30px 0;
+}
+
+.char {
+    background: #ffffff;
+    padding: 20px 15px; /* Уменьшены внутренние отступы */
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    border: 2px solid #f0f0f0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.char .s-1 {
+    font-size: 24px; /* Уменьшен размер шрифта */
+    font-weight: 700;
+    color: #7fc321;
+    margin-bottom: 8px; /* Уменьшен отступ снизу */
+    font-family: "Playfair Display", serif;
+    position: relative;
+    display: inline-block;
+}
+
+.char .s-2 {
+    font-size: 13px; /* Уменьшен размер шрифта */
+    color: #666666;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+/* Адаптивность */
+@media (max-width: 991px) {
+    .characteristics-1 {
+        grid-template-columns: repeat(3, 1fr); /* Сохраняем 3 колонки */
+        gap: 10px;
+    }
+    
+    .char {
+        padding: 15px 10px;
+    }
+    
+    .char .s-1 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 576px) {
+    .characteristics-1 {
+        grid-template-columns: 1fr;
+    }
+    
+    .char {
+        padding: 20px;
+    }
+    
+    .char .s-1 {
+        font-size: 24px;
+    }
 }
