@@ -2547,20 +2547,34 @@ h1 {
   padding-left: 20px;
 }
 .zaprosi-ul {
-  padding-left: 14px;
-  list-style-type: none !important;
-}
-
-.zaprosi-ul li a {
-  color: #fff;
-}
-
-.zaprosi-ul li a:hover {
-  color: #e2a606;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .zaprosi-ul li {
-  list-style-type: square;
+  
+}
+
+.zaprosi-ul li a {
+  color: #444444;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+}
+
+.zaprosi-ul li a:before {
+  content: "\f105"; /* FontAwesome иконка стрелки */
+  font-family: "FontAwesome";
+  margin-right: 8px;
+  color: #7fc321;
+  font-size: 14px;
+}
+
+.zaprosi-ul li a:hover {
+  color: #7fc321;
 }
 
 .offers-footer-wraper {
@@ -2574,20 +2588,25 @@ h1 {
 }
 
 .offers-footer li {
-  color: #fff !important;
+  color: #444 !important;
 }
 
 .offers-footer a {
-  color: #ddd !important;
+  color: #7fc321 !important;
 }
 
 .offers-footer a:hover {
-  color: #e7e3b1 !important;
+  color: #7fc321 !important;
   text-decoration: underline;
 }
 
 .section-queries {
-  background: #985b46;
+  background: #cccccc;
+  padding-bottom: 40px;
+}
+
+.section-queries .h3{
+color: #444 !important;
 }
 
 .original
@@ -3425,7 +3444,7 @@ a.mega-menu-link {
   font-weight: 500;
 }
 
-/* Иконки для каждого блока */
+/* Иконки для к��ждого блока */
 .showing__item i {
   font-size: 32px;
   color: #7fc321;
@@ -4059,7 +4078,7 @@ a.mega-menu-link {
     color: #7fc321 !important;
 }
 
-/* Принудительно меняем цвет те�������� ������нктов меню */
+/* Принудительно меняем цвет те���������� ������нктов меню */
 #mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2801 > a.mega-menu-link,
 #mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2803 > a.mega-menu-link {
     color: #222 !important;
@@ -5371,4 +5390,171 @@ h2.style-shadow::first-letter {
     color: #7fc321;
     font-size: 20px;
     z-index: 2;
+}
+
+/* Стили для секции популярных запросов и услуг */
+.popular-section {
+    padding: 80px 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), 
+                url('/wp-content/uploads/2024/01/pattern-bg.jpg') center/cover;
+    position: relative;
+}
+
+.popular-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #7fc321 0%, transparent 100%);
+}
+
+.popular-offers,
+.popular-queries {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.popular-offers:hover,
+.popular-queries:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.popular-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #222222;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px;
+    font-family: "Playfair Display", serif;
+}
+
+.popular-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #7fc321 0%, #95e62c 100%);
+    border-radius: 3px;
+}
+
+.offers-footer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.offers-footer li {
+    position: relative;
+    padding: 7px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444444;
+    transition: all 0.3s ease;
+}
+
+.offers-footer li:last-child {
+    border-bottom: none;
+}
+
+.offers-footer li:hover {
+    padding-left: 10px;
+}
+
+.offers-footer a {
+    color: #7fc321;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.offers-footer a:hover {
+    color: #72b01c;
+    border-bottom-color: #72b01c;
+}
+
+#capitalize-word {
+    color: #7fc321;
+    font-weight: 500;
+}
+
+.zaprosi-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.zaprosi-ul li {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.zaprosi-ul li a {
+    display: block;
+    color: #444444;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    
+}
+
+.zaprosi-ul li a:hover {
+    
+    color: #7fc321;
+    border-color: #7fc321;
+    transform: translateX(5px);
+}
+
+/* Адаптивность */
+@media (max-width: 991px) {
+    .popular-section {
+        padding: 60px 0;
+    }
+
+    .popular-offers,
+    .popular-queries {
+        padding: 25px;
+        margin-bottom: 30px;
+    }
+
+    .popular-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .offers-footer li,
+    .zaprosi-ul li a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .popular-section {
+        padding: 40px 0;
+    }
+
+    .popular-offers,
+    .popular-queries {
+        padding: 20px;
+    }
+
+    .popular-title {
+        font-size: 22px;
+    }
+
+    .offers-footer li {
+        padding: 12px 0;
+    }
 }
