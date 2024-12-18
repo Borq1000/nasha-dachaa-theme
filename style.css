@@ -4059,14 +4059,14 @@ a.mega-menu-link {
     color: #7fc321 !important;
 }
 
-/* Принудительно меняем цвет те��ст�� ������нктов меню */
+/* Принудительно меняем цвет те�������� ������нктов меню */
 #mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2801 > a.mega-menu-link,
 #mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2803 > a.mega-menu-link {
     color: #222 !important;
     text-align: center;
 }
 
-/* Стили для состояния при наве����ении */
+/* Стили для состояния при ��а����е����ении */
 #mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2801 > a.mega-menu-link:hover,
 #mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2803 > a.mega-menu-link:hover {
     color: #7fc321 !important;
@@ -4791,6 +4791,7 @@ h2.style-shadow::first-letter {
     height: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .article-card:hover {
@@ -4836,6 +4837,7 @@ h2.style-shadow::first-letter {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    
 }
 
 .article-title {
@@ -4985,4 +4987,388 @@ h2.style-shadow::first-letter {
         padding: 10px 25px;
         font-size: 15px;
     }
+}
+
+/* Стили для секции консультации */
+.consultation-section {
+  padding: 80px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.85)), url('https://nasha-dachaa.ru/wp-content/uploads/2024/12/banner4.jpg') center/cover no-repeat fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.consultation-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.consultation-content {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    border: 1px solid #7fc321;
+}
+
+.consultation-content:hover {
+    transform: translateY(-5px);
+}
+
+.consultation-left {
+    flex: 1;
+    text-align: left;
+}
+
+.consultation-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.consultation-title {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
+    text-align: left;
+}
+
+.consultation-description {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.consultation-features {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #ffffff;
+    flex: 0 1 auto;
+    white-space: nowrap;
+}
+
+.feature-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.feature-item i {
+    color: #7fc321;
+    font-size: 18px;
+}
+
+.feature-item span {
+    font-size: 16px;
+}
+
+.consultation-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #7fc321;
+    color: #ffffff;
+    padding: 16px 32px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.consultation-button:hover {
+    background: transparent;
+    border-color: #7fc321;
+    color: #ffffff;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.consultation-button i {
+    transition: transform 0.3s ease;
+}
+
+.consultation-button:hover i {
+    transform: translateX(5px);
+}
+
+.consultation-phone {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    align-self: center;
+}
+
+.consultation-phone .icon-circle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #7fc321;
+    font-size: 18px;
+}
+
+.consultation-phone span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Адаптивность */
+@media (max-width: 991px) {
+    .consultation-content {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .consultation-right {
+        width: 100%;
+        align-items: center;
+    }
+
+    .consultation-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .consultation-description {
+        text-align: center;
+    }
+
+    .consultation-features {
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .feature-item {
+        flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .consultation-section {
+        padding: 60px 0;
+    }
+
+    .consultation-content {
+        padding: 25px;
+    }
+
+    .consultation-title {
+        font-size: 26px;
+    }
+
+    .consultation-description {
+        font-size: 16px;
+    }
+
+    .feature-item {
+        font-size: 15px;
+    }
+
+    .consultation-button {
+        padding: 14px 28px;
+        font-size: 16px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .consultation-phone {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .consultation-section {
+        padding: 40px 0;
+    }
+
+    .consultation-title {
+        font-size: 24px;
+    }
+
+    .consultation-description {
+        font-size: 15px;
+    }
+
+    .consultation-features {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .feature-item {
+        width: 100%;
+    }
+}
+
+/* Стили для блока "Как мы работаем" */
+.how-we-work {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #222222;
+    font-family: "Playfair Display", serif;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #7fc321 0%, #95e62c 100%);
+    border-radius: 3px;
+}
+
+.work-steps {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    position: relative;
+}
+
+.work-step {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    border: 1px solid rgba(127, 195, 33, 0.15);
+}
+
+.work-step:hover {
+    transform: translateY(-5px);
+    border-color: rgba(127, 195, 33, 0.3);
+    box-shadow: 0 10px 30px rgba(127, 195, 33, 0.1);
+}
+
+.step-icon {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border: 2px solid #7fc321;
+}
+
+.work-step:hover .icon-circle {
+    background: #7fc321;
+}
+
+.icon-circle i {
+    font-size: 28px;
+    color: #7fc321;
+    transition: all 0.3s ease;
+}
+
+.work-step:hover .icon-circle i {
+    color: #ffffff;
+}
+
+.step-number {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 35px;
+    height: 35px;
+    background: #7fc321;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(127, 195, 33, 0.2);
+}
+
+.step-content {
+    text-align: center;
+}
+
+.step-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+    margin-bottom: 10px;
+}
+
+.step-content p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Добавляем линии-соединения между элементами */
+.work-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    right: -20px;
+    width: 20px;
+    height: 2px;
+    background: linear-gradient(90deg, #7fc321 0%, #95e62c 100%);
+    z-index: 1;
+}
+
+.work-step:not(:last-child)::before {
+    content: '→';
+    position: absolute;
+    top: 27px;
+    right: -15px;
+    color: #7fc321;
+    font-size: 20px;
+    z-index: 2;
 }

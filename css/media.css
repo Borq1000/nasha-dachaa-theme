@@ -628,3 +628,73 @@
         display: none !important;
     }
 }
+
+/* Адаптивные стили для блока "Как мы работаем" */
+@media (max-width: 1200px) {
+    .work-steps {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .how-we-work {
+        padding: 50px 0;
+    }
+
+    .work-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .work-step {
+        padding: 20px;
+    }
+
+    .step-content h3 {
+        font-size: 18px;
+    }
+
+    .step-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .how-we-work {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .work-steps {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .work-step {
+        padding: 15px;
+    }
+
+    .step-icon {
+        margin-bottom: 15px;
+    }
+
+    .icon-circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon-circle i {
+        font-size: 24px;
+    }
+
+    .step-number {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+}

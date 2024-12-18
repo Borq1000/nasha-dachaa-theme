@@ -69,8 +69,47 @@
 
 
 
-    <section class="want-to-build want-to-build--mainpage">
-        <div class="container text-center"><span class="txt-home-consultation">Нужна консультация специалиста?</span>  <a class="button-71 sg-popup-id-4027" href="">Свяжитесь с нами!</a></div>
+    <section class="consultation-section">
+        <div class="container">
+            <div class="consultation-wrapper">
+                <div class="consultation-content">
+                    <div class="consultation-left">
+                        <h2 class="consultation-title">Нужна консультация специалиста?</h2>
+                        <p class="consultation-description">Оставьте заявку и наш специалист свяжется с вами в течение 15 минут</p>
+                        <div class="consultation-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa fa-check-circle"></i>
+                                </div>
+                                <span>Бесплатная консультация</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa fa-clock-o"></i>
+                                </div>
+                                <span>Быстрый ответ</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <span>Опытные специалисты</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="consultation-right">
+                        <a href="" class="consultation-button sg-popup-id-4027">
+                            <span>Получить консультацию</span>
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                        <div class="consultation-phone">
+                            <i class="fas fa-phone-alt icon-circle"></i>
+                            <span>+7 (495) 227-67-27</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <?php require_once 'includes/how-we-work.php'; ?>
