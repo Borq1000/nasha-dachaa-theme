@@ -4086,7 +4086,7 @@ a.mega-menu-link {
     text-align: center;
 }
 
-/* Стили для состояния ��ри наведении */
+/* Стили для с��стояния ��ри наведении */
 #mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2801 > a.mega-menu-link:hover,
 #mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2803 > a.mega-menu-link:hover {
     color: #7fc321 !important;
@@ -5562,6 +5562,7 @@ h2.style-shadow::first-letter {
     }
 }
 
+
 /* Стили для футера */
 .footer-bs {
     background: #ddd;
@@ -5788,4 +5789,184 @@ h2.style-shadow::first-letter {
 .footer-logo {
   max-width: 200px !important;
   height: auto;
+}
+
+/* Стили для секции subheader-section */
+.subheader-section {
+    position: relative;
+    padding: 40px 0; /* Уменьшено с 80px до 40px */
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+    min-height: 280px; /* Уменьшено с 350px */
+}
+
+/* Левый блок */
+.subheader-left-block {
+    padding: 20px 0; /* Уменьшено с 40px до 20px */
+    color: #ffffff;
+}
+
+.service-h2-title {
+    font-size: 36px; /* Уменьшено с 42px */
+    font-weight: 700;
+    margin-bottom: 15px; /* Уменьшено с 25px */
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subheader-left-block span {
+    font-size: 16px; /* Уменьшено с 18px */
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+    display: block;
+    margin-top: 15px; /* Уменьшено с 20px */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Правый блок с формой */
+.subheader-right-block {
+    padding: 15px; /* Уменьшено с 20px */
+}
+
+.subheader-right-block_form-outer {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px; /* Уменьшено с 20px */
+    padding: 25px; /* Уменьшено с 30px */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.subheader-right-block_form-outer:hover {
+    transform: translateY(-5px);
+}
+
+.subheader-right-block__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222222;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.subheader-right-block__title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background: #7fc321;
+}
+
+.subheader-right-block__title i {
+    color: #7fc321;
+    margin-right: 8px;
+}
+
+/* Стили для формы */
+.subheader-right-block .form-group {
+    margin-bottom: 15px;
+}
+
+.subheader-right-block .form-control {
+    height: 45px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.subheader-right-block .form-control:focus {
+    border-color: #7fc321;
+    box-shadow: 0 0 0 3px rgba(127, 195, 33, 0.1);
+    outline: none;
+}
+
+.subheader-right-block .form-control::placeholder {
+    color: #999;
+}
+
+/* Стили для кнопки отправки */
+.subheader-right-block-form-btn {
+    background: #7fc321;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.subheader-right-block-form-btn:hover {
+    background: #72b01c;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(127, 195, 33, 0.2);
+}
+
+/* Стили для спиннера загрузки */
+.wpcf7-spinner {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.submitting .wpcf7-spinner {
+    opacity: 1;
+}
+
+/* Стили для сообщений об ошибках */
+.wpcf7-not-valid-tip {
+    color: #dc3545;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.wpcf7-response-output {
+    margin: 15px 0 0;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .subheader-right-block {
+        padding: 10px;
+    }
+    
+    .subheader-right-block_form-outer {
+        padding: 20px;
+    }
+    
+    .subheader-right-block__title {
+        font-size: 18px;
+    }
+    
+    .subheader-right-block .form-control {
+        height: 40px;
+        font-size: 14px;
+    }
+    
+    .subheader-right-block-form-btn {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
 }

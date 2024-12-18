@@ -9,44 +9,42 @@ get_header();
 <style>
     
    .subheader-section {
-    background: url(<?php header_image(); ?>) no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(<?php header_image(); ?>) no-repeat center;
     background-size: cover;
     min-height: 350px;
 } 
 </style>
+
 <section class="subheader-section">
     <div class="container">
         <div class="row">
             <div class="col-md-7 col-sm-7">
                 <div class="subheader-left-block">
-                    <div class="h2 service-h2-title"><?php the_title(); ?></div>
+                    <h1 class="service-h2-title"><?php the_title(); ?></h1>
                     <?php
-                    
                     $reklama = get_post_meta(get_the_ID(), 'reklama', true);
-                   $reklama_sidebar = get_post_meta(get_the_ID(), 'reklama_sidebar', true);
-
-                   
-                   echo '<span>';
-                    echo $reklama;
-                    echo '</span>';
-                    echo $reklama_sidebar;
+                    $reklama_sidebar = get_post_meta(get_the_ID(), 'reklama_sidebar', true);
+                    
+                    if ($reklama) {
+                        echo '<span class="service-description">';
+                        echo $reklama;
+                        echo '</span>';
+                    }
                     ?>
                 </div>
             </div>
             
-   <div class="col-md-5 col-sm-5">
+            <div class="col-md-5 col-sm-5">
                 <div class="subheader-right-block">
                     <div class="subheader-right-block_form-outer">
-                    <div class="subheader-right-block__form-wraper">
-                        <div class="subheader-right-block__title">Заказать услугу <?php the_title(); ?></div>
-                       
-                        <?php 
-                        
-                       
-                        echo do_shortcode('[contact-form-7 id="6852" title="Заказ услуги subheader"]');  ?>
-
+                        <div class="subheader-right-block__form-wraper">
+                            <div class="subheader-right-block__title">
+                                <i class="fas fa-clipboard-list"></i>
+                                Заказать услугу <?php the_title(); ?>
+                            </div>
+                            <?php echo do_shortcode('[contact-form-7 id="6852" title="Заказ услуги subheader"]'); ?>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
