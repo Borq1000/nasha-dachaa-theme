@@ -1,8 +1,10 @@
+<?php wp_footer(); ?>
 </main>
 
 <footer class="footer-bs">
     <div class="container">
         <div class="row">
+            <!-- Левая колонка с контактами -->
             <div class="col-md-4 footer-brand">
                 <img src="/wp-content/uploads/2021/11/nd-logo-new.png" alt="Наша дача" class="footer-logo">
                 <hr class="footer-divider">
@@ -51,49 +53,128 @@
                 <div class="footer-buttons">
                     <div class="row">
                         <div class="col-md-6">
-                            <a href="" class="btn callback-btn sg-popup-id-4027">Заказать звонок</a>
+                            <a href="" class="callback-btn sg-popup-id-4027">
+                                <i class="fas fa-headset"></i>
+                                Заказать звонок
+                            </a>
                         </div>
                         <div class="col-md-6">
-                            <div class="messenger-btn">
-                                <a href="https://wa.me/79778075987" class="whatsapp-link">
-                                    <span class="whatsapp-text">WhatsApp</span>
-                                    <i class="whatsapp-icon"></i>
-                                </a>
-                            </div>
+                            <a href="https://wa.me/79778075987" class="whatsapp-link">
+                                <div class="whatsapp-text">
+                                    <span>Написать</span>
+                                    <span>на WhatsApp</span>
+                                </div>
+                                <img src="/wp-content/uploads/2024/12/wsp.png" alt="WhatsApp">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4 footer-nav">
-                <h3 class="footer-title">Услуги</h3>
-                <ul class="footer-menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
-                    <li><a itemprop="url" href="/drenazh-uchastka-pod-kljuch/">Дренаж участка и ливнёвка</a></li>
-                    <li><a itemprop="url" href="/uborka-i-raschistka-uchastka/">Уборка и расчистка участка</a></li>
-                    <li><a itemprop="url" href="/landshaftnye-raboty/">Ландшафтные работы</a></li>
-                </ul>
+            <!-- Средняя колонка с меню -->
+            <div class="col-md-3">
+                <!-- Меню услуг -->
+                <div class="footer-nav">
+                    <h3 class="footer-title">Услуги</h3>
+                    <ul class="footer-menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <li><a itemprop="url" href="/drenazh-uchastka-pod-kljuch/">Дренаж участка и ливнёвка</a></li>
+                        <li><a itemprop="url" href="/uborka-i-raschistka-uchastka/">Уборка и расчистка участка</a></li>
+                        <li><a itemprop="url" href="/landshaftnye-raboty/">Ландшафтные работы</a></li>
+                    </ul>
+                </div>
+
+                <!-- Информационное меню -->
+                <div class="footer-nav">
+                    <h3 class="footer-title">Информация</h3>
+                    <ul class="footer-menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <li><a itemprop="url" href="/o-nas/">О нас</a></li>
+                        <li><a itemprop="url" href="/portfolio/">Примеры работ</a></li>
+                        <li><a itemprop="url" href="/articles/">Полезные статьи</a></li>
+                        <li><a itemprop="url" href="/kontakty/">Контакты</a></li>
+                        <li><a itemprop="url" href="/payment/" class="payment-link">Оплата услуг</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="col-md-4 footer-nav">
-                <h3 class="footer-title">Информация</h3>
-                <ul class="footer-menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
-                    <li><a itemprop="url" href="/o-nas/">О нас</a></li>
-                    <li><a itemprop="url" href="/portfolio/">Примеры работ</a></li>
-                    <li><a itemprop="url" href="/articles/">Полезные статьи</a></li>
-                    <li><a itemprop="url" href="/kontakty/">Контакты</a></li>
-                    <li><a itemprop="url" href="/payment/" class="payment-link">Оплата услуг</a></li>
-                </ul>
+            <!-- Правая колонка с городами -->
+            <div class="col-md-5">
+                <div class="footer-cities-area">
+                    <div class="h3-footer">Наши бригады работают на выезд:</div>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-4 cities-ul-wraper">
+                            <ul class="cities-ul">
+                                <li>Александров</li>
+                                <li>Балашиха</li>
+                                <li>Бронницы</li>
+                                <li>Волоколамск</li>
+                                <li>Воскресенск</li>
+                                <li>Дмитров</li>
+                                <li>Домодедово</li>
+                                <li>Дубна</li>
+                                <li>Егорьевск</li>
+                                <li>Ивантеевка</li>
+                                <li>Истра</li>
+                                <li>Кашира</li>
+                                <li>Киржач</li>
+                                <li>Клин</li>
+                                <li>Коломна</li>
+                                <li>Королев</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 col-xs-4 cities-ul-wraper">
+                            <ul class="cities-ul">
+                                <li>Лобня</li>
+                                <li>Люберцы</li>
+                                <li>Михнево</li>
+                                <li>Москва</li>
+                                <li>Можайск</li>
+                                <li>Мытищи</li>
+                                <li>Наро-Фоминск</li>
+                                <li>Ногинск</li>
+                                <li>Обнинск</li>
+                                <li>Одинцово</li>
+                                <li>Орехово-Зуево</li>
+                                <li>Павловский Посад</li>
+                                <li>Переславль-Залесский</li>
+                                <li>Подмосковье</li>
+                                <li>Подольск</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 col-xs-4 cities-ul-wraper">
+                            <ul class="cities-ul">
+                                <li>Пушкино</li>
+                                <li>Раменское</li>
+                                <li>Сергиев-Посад</li>
+                                <li>Серпухов</li>
+                                <li>Солнечногорск</li>
+                                <li>Софрино</li>
+                                <li>Ступино</li>
+                                <li>Талдом</li>
+                                <li>Троицк</li>
+                                <li>Химки</li>
+                                <li>Чехов</li>
+                                <li>Шатура</li>
+                                <li>Шаховская</li>
+                                <li>Щелково</li>
+                                <li>Электросталь</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </footer>
 
-<div style="background: #f7f7f7;text-align:center; border-top:1px solid #dedede;color:#444;width: 100%;position: relative;bottom: 0px;padding: 10px 0 10px 0;">
-    <p style="margin: 0 0 0px;font-size: 14px;">Разработка сайта <a href="https://alseo.ru/" style="color:#444;">alseo.ru</a></p>
+<div class="footer-copyright">
+    <div class="container">
+        <p>Разработка сайта <a href="https://alseo.ru/">alseo.ru</a></p>
+    </div>
 </div>
 
 <script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/bootstrap.min.js"></script>
-
 <script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/custom.js"></script>
 
 <script>
@@ -293,8 +374,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/94844621" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-
-<?php wp_footer(); ?>
 
 </body>
 </html>

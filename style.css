@@ -463,7 +463,7 @@ h3 {
   line-height: 1.6em;
 }
 
-/*------------------Основное фото на главной странице услуг--------------------------*/
+/*------------------Основное фото ��а главной странице услуг--------------------------*/
 .img-main-service-page {
   height: 375px !important;
   width: 100% !important;
@@ -2553,7 +2553,7 @@ h1 {
 }
 
 .zaprosi-ul li {
-  
+  margin-bottom: 8px;
 }
 
 .zaprosi-ul li a {
@@ -2601,8 +2601,9 @@ h1 {
 }
 
 .section-queries {
-  background: #cccccc;
+  
   padding-bottom: 40px;
+  border-bottom: 2px solid #7fc321;
 }
 
 .section-queries .h3{
@@ -2791,7 +2792,7 @@ a.mega-menu-link {
   background: #ac5b43;
 }
 
-/*---------------Это стили калькулятора заездов---------------------------*/
+/*---------------Это стили калькулято��а заездов---------------------------*/
 .row-calc-compact label {
   font-size: 15px;
 }
@@ -3614,7 +3615,7 @@ a.mega-menu-link {
 }
 
 .faq-question {
-  padding: 16px 20px; /* Уменьшены отступы с 25px 30px */
+  padding: 16px 20px; /* Уменьш��ны отступы с 25px 30px */
   font-size: 19px;
   font-weight: 500;
   line-height: 1.5;
@@ -4078,20 +4079,20 @@ a.mega-menu-link {
     color: #7fc321 !important;
 }
 
-/* Принудительно меняем цвет те���������� ������нктов меню */
+/* Принудительно меняем цвет текста пунктов меню */
 #mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2801 > a.mega-menu-link,
 #mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2803 > a.mega-menu-link {
     color: #222 !important;
     text-align: center;
 }
 
-/* Стили для состояния при ��а����е����ении */
+/* Стили для состояния ��ри наведении */
 #mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2801 > a.mega-menu-link:hover,
 #mega-menu-wrap-primary #mega-menu-primary li#mega-menu-item-2803 > a.mega-menu-link:hover {
     color: #7fc321 !important;
 }
 
-/* ��тили для пунктов верхнего уровня */
+/* Стили для пунктов верхнего уровня */
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
     font-size: 15px !important;
     font-weight: 500 !important;
@@ -5492,29 +5493,31 @@ h2.style-shadow::first-letter {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: grid;
-    gap: 12px;
 }
 
 .zaprosi-ul li {
-    position: relative;
-    transition: all 0.3s ease;
+    margin-bottom: 8px;
 }
 
 .zaprosi-ul li a {
-    display: block;
     color: #444444;
     text-decoration: none;
     font-size: 14px;
-    transition: all 0.3s ease;
-    
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+}
+
+.zaprosi-ul li a:before {
+    content: "\f105"; /* FontAwesome иконка стрелки */
+    font-family: "FontAwesome";
+    margin-right: 8px;
+    color: #7fc321;
+    font-size: 14px;
 }
 
 .zaprosi-ul li a:hover {
-    
     color: #7fc321;
-    border-color: #7fc321;
-    transform: translateX(5px);
 }
 
 /* Адаптивность */
@@ -5557,4 +5560,232 @@ h2.style-shadow::first-letter {
     .offers-footer li {
         padding: 12px 0;
     }
+}
+
+/* Стили для футера */
+.footer-bs {
+    background: #ddd;
+    padding: 20px 0;
+    color: #333333;
+}
+
+.footer-brand {
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+}
+
+.footer-contact-info {
+    margin-bottom: 30px;
+}
+
+.footer-contact-info p {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #333333;
+}
+
+.circle-icon {
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-icon i {
+    color: #7fc321;
+    font-size: 14px;
+}
+
+.footer-company-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.footer-link {
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #7fc321;
+}
+
+.footer-buttons {
+    margin-top: 30px;
+}
+
+.footer-buttons .callback-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px !important;
+    background: #7fc321;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-buttons .callback-btn:hover {
+    background: #72b01c;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(127, 195, 33, 0.2);
+}
+
+.footer-buttons .whatsapp-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f5f5f5;
+    border-radius: 30px;
+    padding: 8px 16px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    width: 100%;
+}
+
+.footer-buttons .whatsapp-link:hover {
+    background: #e9e9e9;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.footer-buttons .whatsapp-text {
+    color: #444;
+    font-size: 14px;
+}
+
+.footer-buttons .whatsapp-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.h3-footer {
+    color: #333333;
+}
+
+.cities-ul li {
+    color: #333333;
+}
+
+.footer-nav {
+    margin-bottom: 30px;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+    color: #333333;
+}
+
+.footer-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #7fc321;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 10px;
+}
+
+.footer-menu a {
+    color: #333333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-menu a:hover {
+    color: #7fc321;
+    transform: translateX(5px);
+}
+
+/* Стили для блока городов */
+.footer-cities-area {
+    background: url(/wp-content/uploads/2021/10/mapmsko2-40.png) center no-repeat;
+    background-size: contain;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 991px) {
+    .footer-bs {
+        padding: 40px 0;
+    }
+
+    .footer-brand, .footer-nav {
+        margin-bottom: 30px;
+    }
+
+    .footer-cities-area {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .cities-ul-wraper {
+        margin-bottom: 20px;
+    }
+
+    .footer-cities-area {
+        background-size: cover;
+    }
+}
+
+.footer-buttons .whatsapp-link img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-buttons .whatsapp-link {
+  position: relative;
+  top:13px;
+}
+
+.footer-copyright {
+  background: #ddd;
+  color: #444;
+}
+
+.footer-logo {
+  max-width: 200px !important;
+  height: auto;
 }
