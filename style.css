@@ -6859,7 +6859,7 @@ h2.style-shadow::first-letter {
 }
 
 .wrp-1 ul li {
-    padding: 15px;
+    padding: 7px;
     margin-bottom: 12px;
     background: #f8f9fa;
     border-radius: 12px;
@@ -7073,7 +7073,7 @@ h2.style-shadow::first-letter {
 }
 
 .section-queries {
-    background: linear-gradient(135deg, #333 0%, #1a1a1a 100%);
+  background: linear-gradient(135deg, #3333330a 0%, #1a1a1a0d 100%);
     padding: 60px 0;
     color: #fff;
 }
@@ -7185,4 +7185,27 @@ h2.style-shadow::first-letter {
     .char .s-1 {
         font-size: 24px;
     }
+}
+
+.wrp-2 > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wrp-2 > ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.wrp-2 > ul li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #7fc321;
+    font-size: 18px;
+    font-weight: bold;
 }
